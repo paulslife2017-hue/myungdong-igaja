@@ -163,21 +163,6 @@
         <div class="header-top">
             <div class="container">
                 <div class="header-top-content">
-                    <div class="contact-info">
-                        <a href="tel:+82-10-5894-7690" class="phone">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                            +82-10-5894-7690
-                        </a>
-                        <span class="hours">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polyline points="12 6 12 12 16 14"></polyline>
-                            </svg>
-                            <span data-i18n="hours">10:00 - 21:00</span>
-                        </span>
-                    </div>
                     <div class="language-selector">
                         <button class="lang-btn active" data-lang="ko">한국어</button>
                         <button class="lang-btn" data-lang="en">English</button>
@@ -763,7 +748,8 @@
                 <div class="location-map">
                     <div class="map-placeholder">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.8374524636344!2d126.98159!3d37.56366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDMzJzQ5LjIiTiAxMjbCsDU4JzU0LjAiRQ!5e0!3m2!1sen!2skr!4v1234567890"
+                            id="googleMap"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.8374524636344!2d126.98159!3d37.56366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDMzJzQ5LjIiTiAxMjbCsDU4JzU0LjAiRQ!5e0!3m2!1sko!2skr!4v1234567890"
                             width="100%"
                             height="450"
                             style="border:0;"
@@ -772,6 +758,15 @@
                             referrerpolicy="no-referrer-when-downgrade"
                             title="LEEKAJA Hair Myeongdong Location Map">
                         </iframe>
+                    </div>
+                    <div class="map-button-wrapper">
+                        <a href="https://www.google.com/maps/search/?api=1&query=37.56366,126.98159" target="_blank" class="btn btn-primary map-btn">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span data-i18n="btn-directions">찾아가기</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -873,24 +868,6 @@
                         <li><a href="#reviews" data-i18n="footer-link-reviews">고객후기</a></li>
                         <li><a href="#gallery" data-i18n="footer-link-gallery">갤러리</a></li>
                         <li><a href="#location" data-i18n="footer-link-location">오시는길</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4 data-i18n="footer-contact-title">연락처</h4>
-                    <ul class="footer-contact">
-                        <li>
-                            <strong data-i18n="footer-address">주소:</strong><br>
-                            서울 중구 명동8길 27, 5층
-                        </li>
-                        <li>
-                            <strong data-i18n="footer-phone">전화:</strong><br>
-                            <a href="tel:+82-10-5894-7690">+82-10-5894-7690</a>
-                        </li>
-                        <li>
-                            <strong>Email:</strong><br>
-                            <a href="mailto:info@leekaja-myeongdong.com">info@leekaja-myeongdong.com</a>
-                        </li>
                     </ul>
                 </div>
             </div>

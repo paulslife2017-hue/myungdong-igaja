@@ -202,7 +202,7 @@ img {
 
 .header-top-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     gap: var(--spacing-sm);
@@ -1188,6 +1188,27 @@ section {
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
+}
+
+.map-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-md);
+}
+
+.map-button-wrapper .map-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.map-button-wrapper .map-btn svg {
+    width: 20px;
+    height: 20px;
 }
 
 .map-buttons {
