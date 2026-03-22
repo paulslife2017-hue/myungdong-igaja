@@ -1,161 +1,97 @@
-# LEEKAJA Hair Myeongdong - 이가자 명동 미용실
+# 이가자 명동 미용실 웹사이트
 
-Premium Hair Salon & Headspa in Myeongdong, Seoul
+명동의 프리미엄 헤어살롱 & 헤드스파 전문점 공식 웹사이트
 
-## 🌟 Features
+## 🚀 Vercel 배포 방법
 
-- **3-Language Support**: Korean, English, Japanese
-- **SEO Optimized**: Meta tags, structured data, semantic HTML
-- **Mobile Responsive**: Fully optimized for all devices
-- **Foreigner-Friendly**: International customer focused design
-- **Premium Services**: Headspa, Haircut, Color, Perm, Treatment
+### 1. GitHub 리포지토리 준비
+```bash
+# 이미 GitHub에 push되어 있는 경우 이 단계는 생략
+git add .
+git commit -m "feat: Vercel 배포를 위한 로컬 이미지 및 설정 추가"
+git push origin main
+```
 
-## 🎯 Target Keywords
+### 2. Vercel 배포
 
-### Primary Keywords
-- 명동미용실 (Myeongdong hair salon)
-- 명동헤드스파 (Myungdong headspa)
-- 이가자명동 (LEEKAJA Myeongdong)
-- Myeongdong hair salon
-- Myungdong headspa
+#### 방법 A: Vercel Dashboard (추천)
+1. [Vercel](https://vercel.com)에 로그인
+2. "New Project" 클릭
+3. GitHub 리포지토리 import
+4. 프로젝트 설정:
+   - **Framework Preset**: Other
+   - **Root Directory**: `./` (기본값)
+   - **Build Command**: 비워두기 (정적 사이트)
+   - **Output Directory**: `./` (기본값)
+5. "Deploy" 클릭
 
-### Secondary Keywords
-- 외국인 미용실 (Foreigner friendly salon)
-- 명동 두피관리 (Myeongdong scalp treatment)
-- Seoul hair salon
-- Korean hair salon
-- Best hair salon Myeongdong
-- 明洞美容室
-- 明洞ヘッドスパ
+#### 방법 B: Vercel CLI
+```bash
+# Vercel CLI 설치 (처음 한 번만)
+npm i -g vercel
 
-## 📍 Location
+# 로그인
+vercel login
 
-**Address**: 5F, 27 Myeongdong 8-gil, Jung-gu, Seoul, Korea  
-**Subway**: Myeongdong Station (Line 4) Exit 6, 1 min walk  
-**Phone**: +82-2-123-4567  
-**Hours**: Mon-Fri 10:00-21:00, Sat-Sun 10:00-20:00
+# 배포
+vercel --prod
+```
 
-## 💼 Services
+### 3. 커스텀 도메인 설정 (선택사항)
+1. Vercel Dashboard → 프로젝트 선택
+2. Settings → Domains
+3. 도메인 추가 및 DNS 설정
 
-### 1. Premium Headspa (프리미엄 헤드스파)
-- 15-step professional scalp treatment
-- Deep cleansing, aromatherapy massage
-- Starting from ₩120,000
+## 🎨 주요 기능
 
-### 2. Hair Cut & Styling (헤어컷 & 스타일링)
-- Korean style cut specialist
-- Face shape consultation
-- Starting from ₩35,000
+- ✅ 다국어 지원 (한국어, 영어, 일본어)
+- ✅ 모바일 최적화 UI/UX
+- ✅ 포트폴리오 갤러리 (12개 이미지, 카테고리별 필터링)
+- ✅ 플로팅 연락 버튼 (WhatsApp, LINE)
+- ✅ 하단 모바일 네비게이션
+- ✅ Google Maps 통합 (다국어)
+- ✅ SEO 최적화
 
-### 3. Hair Coloring (헤어 컬러 & 염색)
-- Japanese premium products
-- K-POP trend colors
-- Starting from ₩80,000
+## 📁 프로젝트 구조
 
-### 4. Digital Perm (디지털펌 & 매직)
-- C-curl, S-curl specialist
-- Damage-free treatment
-- Starting from ₩150,000
+```
+webapp/
+├── index.html              # 메인 HTML
+├── styles.css             # 스타일시트
+├── script.js              # JavaScript
+├── translations-complete.js # 다국어 번역
+├── images/
+│   └── gallery/           # 갤러리 이미지 (12개)
+│       ├── headspa-1.jpg
+│       ├── headspa-2.jpg
+│       ├── headspa-3.jpg
+│       ├── cut-1.jpg
+│       ├── cut-2.jpg
+│       ├── cut-3.jpg
+│       ├── color-1.jpg
+│       ├── color-2.jpg
+│       ├── color-3.jpg
+│       ├── perm-1.jpg
+│       ├── perm-2.jpg
+│       └── perm-3.jpg
+├── vercel.json            # Vercel 설정
+└── README.md              # 이 파일
+```
 
-### 5. Scalp Treatment (두피 트리트먼트)
-- Scalp camera diagnosis
-- Hair loss prevention
-- Starting from ₩90,000
+## 📱 연락처
 
-### 6. Hair Treatment (헤어 트리트먼트)
-- Shiseido, Milbon products
-- Keratin treatment
-- Starting from ₩80,000
+- **전화**: +82-10-5894-7690
+- **WhatsApp**: +82-10-5894-7690
+- **LINE**: @leekaja
+- **주소**: 서울 중구 명동8길 27, 5층
 
-## 🏆 Why Choose LEEKAJA Myeongdong?
+## 🛠️ 기술 스택
 
-✅ **20+ Years Experience**: Master stylists with international training  
-✅ **Foreigner Friendly**: English & Japanese fluent staff  
-✅ **Best Location**: 1 min walk from Myeongdong Station  
-✅ **Premium Products**: Shiseido, Milbon, L'Oréal  
-✅ **High Satisfaction**: 4.9/5.0 rating, 1,248 reviews  
-✅ **Individual Consultation**: Personalized style recommendation
+- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
+- **Hosting**: Vercel
+- **Version Control**: Git, GitHub
+- **Images**: AI-generated with Nano-Banana Pro
 
-## 📱 Booking Methods
-
-- **Phone**: +82-2-123-4567
-- **WhatsApp**: +82-10-1234-5678
-- **KakaoTalk**: leekajamd
-- **Email**: info@leekaja-myeongdong.com
-- **Online**: Visit our website
-
-## 🌐 Languages Supported
-
-- 🇰🇷 한국어 (Korean)
-- 🇺🇸 English
-- 🇯🇵 日本語 (Japanese)
-
-## 🎨 Technical Stack
-
-- Pure HTML5, CSS3, JavaScript
-- Responsive Design
-- SEO Optimized
-- Schema.org Structured Data
-- Multi-language Support
-- Accessibility Compliant
-
-## 📊 SEO Features
-
-### On-Page SEO
-- ✅ Semantic HTML5 markup
-- ✅ Meta tags optimization
-- ✅ Open Graph tags
-- ✅ Twitter Card tags
-- ✅ Canonical URLs
-- ✅ Hreflang tags for multi-language
-- ✅ Structured data (JSON-LD)
-- ✅ Alt text for images
-- ✅ Optimized headings (H1-H6)
-
-### Technical SEO
-- ✅ Mobile-first responsive design
-- ✅ Fast loading speed
-- ✅ Clean URL structure
-- ✅ Internal linking
-- ✅ Sitemap ready
-- ✅ Robots.txt ready
-
-### Content SEO
-- ✅ Keyword-optimized content
-- ✅ Long-form service descriptions
-- ✅ FAQ section
-- ✅ Review schema
-- ✅ Local business schema
-
-## 🚀 Deployment
-
-1. Upload files to web server
-2. Configure domain name
-3. Set up SSL certificate
-4. Submit sitemap to search engines
-5. Set up Google Search Console
-6. Configure Google Analytics
-
-## 📈 Marketing Recommendations
-
-1. **Google My Business**: Claim and optimize listing
-2. **Naver Place**: Register business
-3. **TripAdvisor**: Create salon profile
-4. **Instagram**: Regular portfolio posts
-5. **Booking Platforms**: Register on Klook, Creatrip
-6. **Review Management**: Encourage customer reviews
-
-## 📞 Contact
-
-**LEEKAJA Hair Myeongdong**  
-이가자 명동 미용실
-
-- Website: https://www.leekaja-myeongdong.com
-- Email: info@leekaja-myeongdong.com
-- Phone: +82-2-123-4567
-- WhatsApp: +82-10-1234-5678
-- Instagram: @leekaja_myeongdong
-
----
+## 📝 라이선스
 
 © 2024 LEEKAJA Hair Myeongdong. All rights reserved.
