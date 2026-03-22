@@ -1,157 +1,8 @@
-// 다국어 지원 데이터
-const translations = {
-    ko: {
-        // Navigation
-        'nav-home': '홈',
-        'nav-services': '서비스',
-        'nav-headspa': '헤드스파',
-        'nav-gallery': '갤러리',
-        'nav-reviews': '후기',
-        'nav-location': '오시는길',
-        'nav-booking': '예약하기',
-        
-        // Hero Section
-        'hero-title': '명동 No.1 프리미엄 헤어살롱',
-        'hero-subtitle': 'Myeongdong\'s Best Hair Salon & Headspa',
-        'hero-description': '외국인 전문 | 영어·일본어 가능 | 명동역 도보 1분',
-        'btn-book-now': '지금 예약하기',
-        'btn-view-services': '서비스 보기',
-        'badge-reviews': '1,248 리뷰',
-        'badge-visitors': '외국인<br>방문 1위',
-        'badge-award': '명동 최고<br>미용실',
-        
-        // Quick Info
-        'quick-location-title': '📍 위치',
-        'quick-location-desc': '명동역 6번 출구 도보 1분',
-        'quick-languages-title': '🌐 언어',
-        'quick-languages-desc': '한국어 · English · 日本語',
-        'quick-specialty-title': '✨ 특화',
-        'quick-specialty-desc': '헤드스파 · 헤어컷 · 염색 · 펌',
-        'quick-experience-title': '👨‍🦰 경력',
-        'quick-experience-desc': '20년 이상 경력 디자이너',
-        
-        // Hours
-        'hours': '10:00 - 21:00',
-        
-        // Services
-        'services-title': '프리미엄 헤어 서비스',
-        'services-subtitle': 'Premium Hair & Spa Services',
-        'badge-popular': '인기',
-        'price-from': '시작가',
-        'btn-book-service': '예약하기',
-        
-        // Footer
-        'footer-desc': '명동 최고의 프리미엄 헤어살롱 & 헤드스파',
-        'footer-services-title': '서비스',
-        'footer-info-title': '정보',
-        'footer-contact-title': '연락처',
-        'footer-address': '주소:',
-        'footer-phone': '전화:',
-        'footer-privacy': '개인정보처리방침',
-        'footer-terms': '이용약관'
-    },
-    
-    en: {
-        // Navigation
-        'nav-home': 'Home',
-        'nav-services': 'Services',
-        'nav-headspa': 'Headspa',
-        'nav-gallery': 'Gallery',
-        'nav-reviews': 'Reviews',
-        'nav-location': 'Location',
-        'nav-booking': 'Book Now',
-        
-        // Hero Section
-        'hero-title': 'Myeongdong\'s #1 Premium Hair Salon',
-        'hero-subtitle': 'Best Hair Salon & Headspa in Seoul',
-        'hero-description': 'Foreigner Friendly | English & Japanese | 1 min from Myeongdong Station',
-        'btn-book-now': 'Book Now',
-        'btn-view-services': 'View Services',
-        'badge-reviews': '1,248 Reviews',
-        'badge-visitors': 'Top Salon<br>for Foreigners',
-        'badge-award': 'Best in<br>Myeongdong',
-        
-        // Quick Info
-        'quick-location-title': '📍 Location',
-        'quick-location-desc': '1 min walk from Myeongdong Station Exit 6',
-        'quick-languages-title': '🌐 Languages',
-        'quick-languages-desc': 'Korean · English · Japanese',
-        'quick-specialty-title': '✨ Specialty',
-        'quick-specialty-desc': 'Headspa · Haircut · Color · Perm',
-        'quick-experience-title': '👨‍🦰 Experience',
-        'quick-experience-desc': '20+ Years Expert Stylists',
-        
-        // Hours
-        'hours': '10:00 AM - 9:00 PM',
-        
-        // Services
-        'services-title': 'Premium Hair Services',
-        'services-subtitle': 'Professional Hair Care & Treatment',
-        'badge-popular': 'Popular',
-        'price-from': 'From',
-        'btn-book-service': 'Book Now',
-        
-        // Footer
-        'footer-desc': 'Myeongdong\'s Best Premium Hair Salon & Headspa',
-        'footer-services-title': 'Services',
-        'footer-info-title': 'Information',
-        'footer-contact-title': 'Contact',
-        'footer-address': 'Address:',
-        'footer-phone': 'Phone:',
-        'footer-privacy': 'Privacy Policy',
-        'footer-terms': 'Terms of Service'
-    },
-    
-    ja: {
-        // Navigation
-        'nav-home': 'ホーム',
-        'nav-services': 'サービス',
-        'nav-headspa': 'ヘッドスパ',
-        'nav-gallery': 'ギャラリー',
-        'nav-reviews': 'レビュー',
-        'nav-location': 'アクセス',
-        'nav-booking': '予約する',
-        
-        // Hero Section
-        'hero-title': '明洞No.1プレミアムヘアサロン',
-        'hero-subtitle': 'ソウル最高のヘアサロン&ヘッドスパ',
-        'hero-description': '外国人専門 | 日本語対応 | 明洞駅徒歩1分',
-        'btn-book-now': '今すぐ予約',
-        'btn-view-services': 'サービスを見る',
-        'badge-reviews': '1,248件のレビュー',
-        'badge-visitors': '外国人<br>訪問1位',
-        'badge-award': '明洞最高<br>美容室',
-        
-        // Quick Info
-        'quick-location-title': '📍 場所',
-        'quick-location-desc': '明洞駅6番出口徒歩1分',
-        'quick-languages-title': '🌐 言語',
-        'quick-languages-desc': '韓国語 · English · 日本語',
-        'quick-specialty-title': '✨ 専門',
-        'quick-specialty-desc': 'ヘッドスパ · カット · カラー · パーマ',
-        'quick-experience-title': '👨‍🦰 経歴',
-        'quick-experience-desc': '20年以上の経験デザイナー',
-        
-        // Hours
-        'hours': '10:00 - 21:00',
-        
-        // Services
-        'services-title': 'プレミアムヘアサービス',
-        'services-subtitle': 'Professional Hair Care & Treatment',
-        'badge-popular': '人気',
-        'price-from': '開始価格',
-        'btn-book-service': '予約する',
-        
-        // Footer
-        'footer-desc': '明洞最高のプレミアムヘアサロン&ヘッドスパ',
-        'footer-services-title': 'サービス',
-        'footer-info-title': '情報',
-        'footer-contact-title': 'お問い合わせ',
-        'footer-address': '住所:',
-        'footer-phone': '電話:',
-        'footer-privacy': 'プライバシーポリシー',
-        'footer-terms': '利用規約'
-    }
+// 다국어 지원 - 완전한 번역 데이터 사용
+const translations = typeof translationsComplete !== 'undefined' ? translationsComplete : {
+    ko: {},
+    en: {},
+    ja: {}
 };
 
 // DOM 요소
@@ -203,10 +54,33 @@ languageButtons.forEach(button => {
     });
 });
 
-// 페이지 로드 시 저장된 언어 설정 불러오기
+// 브라우저 언어 감지
+function detectBrowserLanguage() {
+    const browserLang = navigator.language || navigator.userLanguage;
+    console.log('Detected browser language:', browserLang);
+    
+    if (browserLang.startsWith('ko')) {
+        return 'ko';
+    } else if (browserLang.startsWith('ja')) {
+        return 'ja';
+    } else {
+        return 'en';
+    }
+}
+
+// 최초 방문 시 브라우저 언어로 자동 설정
 window.addEventListener('DOMContentLoaded', () => {
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'ko';
-    changeLanguage(savedLanguage);
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    
+    if (!savedLanguage) {
+        // 저장된 언어가 없으면 브라우저 언어 감지
+        const detectedLang = detectBrowserLanguage();
+        console.log('Auto-detected language:', detectedLang);
+        changeLanguage(detectedLang);
+    } else {
+        // 저장된 언어가 있으면 그것을 사용
+        changeLanguage(savedLanguage);
+    }
     
     // 날짜 입력 필드 최소값 설정 (오늘)
     const dateInput = document.getElementById('date');
