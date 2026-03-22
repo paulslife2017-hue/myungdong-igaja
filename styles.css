@@ -1472,6 +1472,39 @@ section {
     color: var(--text-muted);
 }
 
+/* Footer Business Information (NAP) */
+.footer-business-info {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--primary-color);
+}
+
+.footer-business-info p {
+    margin: 0.5rem 0;
+    color: var(--bg-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-business-info .business-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-business-info .business-address-kr {
+    font-weight: 500;
+}
+
+.footer-business-info .business-address-en,
+.footer-business-info .business-address-ja {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
 .social-links {
     display: flex;
     gap: var(--spacing-sm);
