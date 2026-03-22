@@ -1538,34 +1538,7 @@ section {
 
 /* Scroll to Top Button */
 .scroll-top {
-    position: fixed;
-    bottom: 100px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: var(--primary-color);
-    color: var(--bg-white);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: var(--shadow-lg);
-    opacity: 0;
-    visibility: hidden;
-    transition: all var(--transition-medium);
-    z-index: var(--z-fixed);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.scroll-top.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-.scroll-top:hover {
-    background-color: var(--primary-dark);
-    transform: translateY(-4px);
+    display: none !important;
 }
 
 /* Floating Action Buttons */
@@ -1674,12 +1647,12 @@ section {
 /* Floating Action Buttons (오른쪽 하단) */
 .floating-buttons {
     position: fixed;
-    bottom: 170px;
+    bottom: 100px;
     right: 20px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    z-index: calc(var(--z-fixed) - 1);
+    z-index: var(--z-fixed);
 }
 
 .fab-btn {
@@ -1719,7 +1692,7 @@ section {
 
 @media (max-width: 768px) {
     .floating-buttons {
-        bottom: 160px;
+        bottom: 90px;
         right: 15px;
     }
     
