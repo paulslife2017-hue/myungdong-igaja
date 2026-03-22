@@ -409,7 +409,8 @@ img {
     min-height: 600px;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #FFF5F0 0%, #FFE8DB 25%, #FFD4C2 50%, #FFC8B3 75%, #FDBDA5 100%);
+    /* 고급스러운 로즈 골드 + 라벤더 그라데이션 */
+    background: linear-gradient(135deg, #FFF8F0 0%, #FFE8E8 20%, #F5E6FF 40%, #E8D5FF 60%, #D4C5F9 80%, #C9B8E8 100%);
     overflow: hidden;
 }
 
