@@ -1674,7 +1674,7 @@ section {
 /* Floating Action Buttons (오른쪽 하단) */
 .floating-buttons {
     position: fixed;
-    bottom: 100px;
+    bottom: 170px;
     right: 20px;
     display: flex;
     flex-direction: column;
@@ -1719,7 +1719,7 @@ section {
 
 @media (max-width: 768px) {
     .floating-buttons {
-        bottom: 90px;
+        bottom: 160px;
         right: 15px;
     }
     
