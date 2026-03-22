@@ -1505,6 +1505,23 @@ section {
     opacity: 0.9;
 }
 
+.footer-business-info .business-phone {
+    margin-top: var(--spacing-sm);
+    font-weight: 500;
+}
+
+.footer-business-info .business-phone a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+}
+
+.footer-business-info .business-phone a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 .social-links {
     display: flex;
     gap: var(--spacing-sm);
