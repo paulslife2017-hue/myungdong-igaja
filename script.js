@@ -88,6 +88,13 @@ window.addEventListener('DOMContentLoaded', () => {
         const today = new Date().toISOString().split('T')[0];
         dateInput.setAttribute('min', today);
     }
+    
+    // 갤러리 아이템 초기화 (모든 아이템 표시)
+    galleryItems.forEach(item => {
+        item.style.display = 'block';
+        item.style.opacity = '1';
+        item.style.transform = 'scale(1)';
+    });
 });
 
 // 모바일 메뉴 토글
