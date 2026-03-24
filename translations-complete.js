@@ -263,9 +263,9 @@ const translationsComplete = {
         'nav-booking': 'Book Now',
         
         // Hero Section
-        'hero-title': 'Myeongdong\'s #1 Premium Hair Salon',
-        'hero-subtitle': 'Best Hair Salon & Headspa in Seoul',
-        'hero-description': 'Foreigner Friendly | English & Japanese | 1 min from Myeongdong Station',
+        'hero-title': 'Best Hair Salon Near Myeongdong Station',
+        'hero-subtitle': 'English & Japanese Speaking Hair Salon in Seoul',
+        'hero-description': 'Tourist Friendly | Exit 6, 1 min | Premium Headspa & Haircut',
         'btn-book-now': 'Book Now',
         'btn-view-services': 'View Services',
         'badge-reviews': '1,248 Reviews',
@@ -515,9 +515,9 @@ const translationsComplete = {
         'nav-booking': '予約する',
         
         // Hero Section
-        'hero-title': '明洞No.1プレミアムヘアサロン',
-        'hero-subtitle': 'ソウル最高のヘアサロン&ヘッドスパ',
-        'hero-description': '外国人専門 | 日本語対応 | 明洞駅徒歩1分',
+        'hero-title': '明洞駅6番出口1分の日本語対応美容室',
+        'hero-subtitle': 'ソウル明洞で一番人気のヘアサロン&ヘッドスパ',
+        'hero-description': '日本人旅行者歓迎 | 日本語スタッフ常駐 | カット·カラー専門',
         'btn-book-now': '今すぐ予約',
         'btn-view-services': 'サービスを見る',
         'badge-reviews': '1,248件のレビュー',
