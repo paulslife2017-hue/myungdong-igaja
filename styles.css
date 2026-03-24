@@ -1613,6 +1613,80 @@ section {
     display: none !important;
 }
 
+/* Floating Contact Buttons */
+.floating-buttons {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 999;
+}
+
+.fab-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all var(--transition-normal);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.fab-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.fab-btn:active {
+    transform: scale(0.95);
+}
+
+.fab-whatsapp {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+}
+
+.fab-whatsapp:hover {
+    background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+}
+
+.fab-line {
+    background: linear-gradient(135deg, #00B900 0%, #00C300 100%);
+    color: white;
+}
+
+.fab-line:hover {
+    background: linear-gradient(135deg, #00A000 0%, #00B900 100%);
+}
+
+.fab-btn svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* Mobile adjustments for floating buttons */
+@media (max-width: 768px) {
+    .floating-buttons {
+        bottom: 80px;
+        right: 16px;
+    }
+    
+    .fab-btn {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .fab-btn svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
 /* Responsive Typography */
 @media (max-width: 768px) {
     html {
