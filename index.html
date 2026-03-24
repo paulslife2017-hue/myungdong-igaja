@@ -62,7 +62,7 @@
         "priceRange": "₩₩-₩₩₩",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "명동8길 27, 5층",
+            "streetAddress": "명동8가길 22, 3층",
             "addressLocality": "중구",
             "addressRegion": "서울특별시",
             "postalCode": "04536",
@@ -173,6 +173,132 @@
                 ]
             }
         }
+    }
+    </script>
+    
+    <!-- FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "명동 미용실 LEEKAJA는 외국인도 이용 가능한가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "네, LEEKAJA 명동점은 외국인 전문 미용실입니다. 영어와 일본어가 가능한 전문 스타일리스트가 상주하고 있어 편하게 소통하실 수 있습니다. 명동역 6번 출구에서 도보 1분 거리에 위치해 있습니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What services does LEEKAJA Myeongdong Hair Salon offer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "LEEKAJA Myeongdong offers premium headspa (66,000-198,000 KRW), Korean-style haircuts (35,000 KRW), hair coloring (99,000+ KRW), digital perms (140,000+ KRW), and scalp treatments. All services include English and Japanese consultation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "명동 헤드스파 가격은 얼마인가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "LEEKAJA 명동점의 헤드스파 가격은 릴렉싱 헤드스파 66,000원부터 유스 헤드스파 198,000원까지 다양합니다. 15단계 전문 두피 케어와 스칼프 마사지가 포함되어 있습니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How to get to LEEKAJA Myeongdong from Myeongdong Station?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "From Myeongdong Station (Line 4) Exit 6, it's just 1 minute walk. Our salon is located at 3F, 22 Myeongdong 8ga-gil, Jung-gu, Seoul. Look for the LEEKAJA sign on the building."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "명동 미용실 예약은 어떻게 하나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "전화 예약 (02-777-8322), WhatsApp (+82-10-5894-7690), LINE (kbeautyseoul)으로 예약 가능합니다. 워크인도 환영하지만 예약을 권장합니다. 영업시간은 평일 10:00-21:00, 주말 10:00-20:00입니다."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Individual Review Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "itemReviewed": {
+            "@type": "HairSalon",
+            "name": "LEEKAJA Myeongdong Hair Salon",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "명동8가길 22, 3층",
+                "addressLocality": "중구",
+                "addressRegion": "서울특별시",
+                "addressCountry": "KR"
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Sarah Johnson"
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "reviewBody": "Best head spa I've ever experienced! The staff speaks perfect English and the treatment was so relaxing. Highly recommend for anyone visiting Myeongdong.",
+        "datePublished": "2024-02-15"
+    }
+    </script>
+    
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.myeongdonghairsalon.co.kr/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://www.myeongdonghairsalon.co.kr/#services"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Headspa",
+                "item": "https://www.myeongdonghairsalon.co.kr/#headspa"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Gallery",
+                "item": "https://www.myeongdonghairsalon.co.kr/#gallery"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Reviews",
+                "item": "https://www.myeongdonghairsalon.co.kr/#reviews"
+            },
+            {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Location",
+                "item": "https://www.myeongdonghairsalon.co.kr/#location"
+            }
+        ]
     }
     </script>
     
@@ -761,9 +887,9 @@
                 <div class="location-info">
                     <div class="info-card">
                         <h3>📍 <span data-i18n="location-address-title">주소</span></h3>
-                        <p class="address-kr">서울특별시 중구 명동8길 27, 5층</p>
-                        <p class="address-en">5F, 27 Myeongdong 8-gil, Jung-gu, Seoul, Korea</p>
-                        <p class="address-ja">ソウル特別市中区明洞8ギル27, 5階</p>
+                        <p class="address-kr">서울특별시 중구 명동8가길 22, 3층</p>
+                        <p class="address-en">3F, 22 Myeongdong 8ga-gil, Jung-gu, Seoul, Korea</p>
+                        <p class="address-ja">ソウル特別市中区明洞8ガギル22, 3階</p>
                     </div>
 
                     <div class="info-card">
@@ -902,9 +1028,9 @@
                     <!-- Business Information (NAP) -->
                     <div class="footer-business-info">
                         <p class="business-name"><strong>이가자 명동 미용실</strong></p>
-                        <p class="business-address-kr">서울특별시 중구 명동8길 27, 5층</p>
-                        <p class="business-address-en">5F, 27 Myeongdong 8-gil, Jung-gu, Seoul, Korea</p>
-                        <p class="business-address-ja">ソウル特別市中区明洞8ギル27, 5階</p>
+                        <p class="business-address-kr">서울특별시 중구 명동8가길 22, 3층</p>
+                        <p class="business-address-en">3F, 22 Myeongdong 8ga-gil, Jung-gu, Seoul, Korea</p>
+                        <p class="business-address-ja">ソウル特別市中区明洞8ガギル22, 3階</p>
                         <p class="business-phone"><a href="tel:+8227778322">+82-2-777-8322</a></p>
                     </div>
                     

@@ -136,8 +136,8 @@ const translationsComplete = {
         'feature-6-desc': '평균 4.9/5.0 리뷰. Google, Naver, TripAdvisor 최고 평점. 재방문율 85%',
         
         // Gallery
-        'gallery-title': '포트폴리오 갤러리',
-        'gallery-subtitle': 'Before & After Gallery',
+        'gallery-title': '고객 리뷰 갤러리',
+        'gallery-subtitle': 'Real Customer Reviews',
         'tab-all': '전체',
         'tab-headspa': '헤드스파',
         'tab-cut': '헤어컷',
@@ -388,8 +388,8 @@ const translationsComplete = {
         'feature-6-desc': 'Average 4.9/5.0 reviews. Top rated on Google, Naver, TripAdvisor. 85% return rate',
         
         // Gallery
-        'gallery-title': 'Portfolio Gallery',
-        'gallery-subtitle': 'Before & After',
+        'gallery-title': 'Customer Review Gallery',
+        'gallery-subtitle': 'Real Customer Experiences',
         'tab-all': 'All',
         'tab-headspa': 'Headspa',
         'tab-cut': 'Haircut',
@@ -640,8 +640,8 @@ const translationsComplete = {
         'feature-6-desc': '平均4.9/5.0レビュー。Google、Naver、TripAdvisor最高評点。再訪問率85%',
         
         // Gallery
-        'gallery-title': 'ポートフォリオギャラリー',
-        'gallery-subtitle': 'ビフォー&アフター',
+        'gallery-title': 'お客様レビューギャラリー',
+        'gallery-subtitle': '実際のお客様体験',
         'tab-all': '全体',
         'tab-headspa': 'ヘッドスパ',
         'tab-cut': 'ヘアカット',
