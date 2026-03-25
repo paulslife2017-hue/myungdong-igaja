@@ -13,7 +13,7 @@ const translationsComplete = {
         // Hero Section
         'hero-title': '명동 No.1 프리미엄 헤어살롱',
         'hero-subtitle': 'Myeongdong\'s Best Hair Salon & Headspa',
-        'hero-description': '외국인 전문 | 영어·일본어 가능 | 명동역 도보 1분',
+        'hero-description': '외국인 전문 | 영어·일본어 가능 | 명동역 도보 3분',
         'btn-book-now': '지금 예약하기',
         'btn-view-services': '서비스 보기',
         'badge-reviews': '1,248 리뷰',
@@ -22,7 +22,7 @@ const translationsComplete = {
         
         // Quick Info
         'quick-location-title': '📍 위치',
-        'quick-location-desc': '명동역 6번 출구 도보 1분',
+        'quick-location-desc': '명동역 8번 출구 도보 3분',
         'quick-languages-title': '🌐 언어',
         'quick-languages-desc': '한국어 · English · 日本語',
         'quick-specialty-title': '✨ 특화',
@@ -127,7 +127,7 @@ const translationsComplete = {
         'feature-2-title': '외국인 전문 서비스',
         'feature-2-desc': '영어, 일본어 완벽 소통. 외국인 고객 만족도 1위. 트립어드바이저 명동 미용실 Top 3',
         'feature-3-title': '최고의 위치',
-        'feature-3-desc': '명동역 6번 출구 도보 1분. 명동 쇼핑가 중심. 호텔에서 쉽게 접근 가능',
+        'feature-3-desc': '명동역 8번 출구 도보 3분. 명동 쇼핑가 중심. 호텔에서 쉽게 접근 가능',
         'feature-4-title': '프리미엄 제품',
         'feature-4-desc': '시세이도, 밀본, 로레알 등 일본·프랑스 프리미엄 제품 사용. 모발 손상 최소화',
         'feature-5-title': '1:1 맞춤 상담',
@@ -174,7 +174,7 @@ const translationsComplete = {
         'location-subtitle': 'Location & Direction',
         'location-address-title': '주소',
         'location-subway-title': '지하철',
-        'location-subway-1': '<strong>명동역</strong> (4호선) 6번 출구 도보 1분',
+        'location-subway-1': '<strong>명동역</strong> (4호선) 8번 출구 도보 3분',
         'location-subway-2': '<strong>을지로입구역</strong> (2호선) 5번 출구 도보 5분',
         'location-contact-title': '연락처',
         'location-hours-title': '영업시간',
@@ -265,7 +265,7 @@ const translationsComplete = {
         // Hero Section
         'hero-title': 'Best Hair Salon Near Myeongdong Station',
         'hero-subtitle': 'English & Japanese Speaking Hair Salon in Seoul',
-        'hero-description': 'Tourist Friendly | Exit 6, 1 min | Premium Headspa & Haircut',
+        'hero-description': 'Tourist Friendly | Exit 8, 3 min | Premium Headspa & Haircut',
         'btn-book-now': 'Book Now',
         'btn-view-services': 'View Services',
         'badge-reviews': '1,248 Reviews',
@@ -274,7 +274,7 @@ const translationsComplete = {
         
         // Quick Info
         'quick-location-title': '📍 Location',
-        'quick-location-desc': '1 min walk from Myeongdong Station Exit 6',
+        'quick-location-desc': '3 min walk from Myeongdong Station Exit 8',
         'quick-languages-title': '🌐 Languages',
         'quick-languages-desc': 'Korean · English · Japanese',
         'quick-specialty-title': '✨ Specialty',
@@ -379,7 +379,7 @@ const translationsComplete = {
         'feature-2-title': 'Foreigner-Friendly Service',
         'feature-2-desc': 'Perfect English & Japanese communication. #1 satisfaction for foreign customers. TripAdvisor Top 3 in Myeongdong',
         'feature-3-title': 'Best Location',
-        'feature-3-desc': '1 min walk from Myeongdong Station Exit 6. Center of Myeongdong shopping district. Easy access from hotels',
+        'feature-3-desc': '3 min walk from Myeongdong Station Exit 8. Center of Myeongdong shopping district. Easy access from hotels',
         'feature-4-title': 'Premium Products',
         'feature-4-desc': 'Shiseido, Milbon, L\'Oréal premium products from Japan & France. Minimal hair damage',
         'feature-5-title': '1:1 Personal Consultation',
@@ -426,7 +426,7 @@ const translationsComplete = {
         'location-subtitle': 'How to Find Us',
         'location-address-title': 'Address',
         'location-subway-title': 'Subway',
-        'location-subway-1': '<strong>Myeongdong Station</strong> (Line 4) Exit 6, 1 min walk',
+        'location-subway-1': '<strong>Myeongdong Station</strong> (Line 4) Exit 8, 3 min walk',
         'location-subway-2': '<strong>Euljiro 1-ga Station</strong> (Line 2) Exit 5, 5 min walk',
         'location-contact-title': 'Contact',
         'location-hours-title': 'Business Hours',
@@ -515,7 +515,7 @@ const translationsComplete = {
         'nav-booking': '予約する',
         
         // Hero Section
-        'hero-title': '明洞駅6番出口1分の日本語対応美容室',
+        'hero-title': '明洞駅8番出口3分の日本語対応美容室',
         'hero-subtitle': 'ソウル明洞で一番人気のヘアサロン&ヘッドスパ',
         'hero-description': '日本人旅行者歓迎 | 日本語スタッフ常駐 | カット·カラー専門',
         'btn-book-now': '今すぐ予約',
@@ -526,7 +526,7 @@ const translationsComplete = {
         
         // Quick Info
         'quick-location-title': '📍 場所',
-        'quick-location-desc': '明洞駅6番出口徒歩1分',
+        'quick-location-desc': '明洞駅8番出口徒歩3分',
         'quick-languages-title': '🌐 言語',
         'quick-languages-desc': '韓国語 · English · 日本語',
         'quick-specialty-title': '✨ 専門',
@@ -631,7 +631,7 @@ const translationsComplete = {
         'feature-2-title': '外国人専門サービス',
         'feature-2-desc': '英語、日本語完璧コミュニケーション。外国人顧客満足度1位。トリップアドバイザー明洞美容室Top 3',
         'feature-3-title': '最高の位置',
-        'feature-3-desc': '明洞駅6番出口徒歩1分。明洞ショッピング街の中心。ホテルから簡単にアクセス可能',
+        'feature-3-desc': '明洞駅8番出口徒歩3分。明洞ショッピング街の中心。ホテルから簡単にアクセス可能',
         'feature-4-title': 'プレミアム製品',
         'feature-4-desc': '資生堂、ミルボン、ロレアルなど日本·フランスプレミアム製品使用。毛髪ダメージ最小化',
         'feature-5-title': '1:1カスタム相談',
@@ -678,7 +678,7 @@ const translationsComplete = {
         'location-subtitle': '道順',
         'location-address-title': '住所',
         'location-subway-title': '地下鉄',
-        'location-subway-1': '<strong>明洞駅</strong> (4号線) 6番出口徒歩1分',
+        'location-subway-1': '<strong>明洞駅</strong> (4号線) 8番出口徒歩3分',
         'location-subway-2': '<strong>乙支路入口駅</strong> (2号線) 5番出口徒歩5分',
         'location-contact-title': 'お問い合わせ',
         'location-hours-title': '営業時間',
