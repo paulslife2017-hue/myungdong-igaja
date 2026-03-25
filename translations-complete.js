@@ -40,9 +40,9 @@ const translationsComplete = {
         
         // Service Details
         'service-headspa-title': '프리미엄 헤드스파',
-        'service-headspa-desc': '15단계 전문 두피 케어, 딥 클렌징, 아로마 마사지로 최상의 휴식과 두피 건강을 동시에',
+        'service-headspa-desc': '15단계 전문 두피 케어, AI 두피진단, 두피 전문제품 사용으로 최상의 두피 건강 관리',
         'headspa-feature-1': '✓ 15단계 전문 두피 스케일링',
-        'headspa-feature-2': '✓ 아로마테라피 마사지',
+        'headspa-feature-2': '✓ AI 두피진단 진행',
         'headspa-feature-3': '✓ 프리미엄 샴푸 & 트리트먼트',
         'headspa-feature-4': '✓ 숄더·넥 마사지 포함',
         
@@ -95,7 +95,7 @@ const translationsComplete = {
         'step-8': '<strong>8. 두피 마사지 2차</strong> - 깊은 이완',
         'step-9': '<strong>9. 넥&숄더 마사지</strong> - 긴장 완화',
         'step-10': '<strong>10. 헤어 트리트먼트</strong> - 모발 영양',
-        'step-11': '<strong>11. 헤드 마사지 3차</strong> - 아로마 오일',
+        'step-11': '<strong>11. 헤드 마사지 3차</strong> - 두피 전문 영양 오일',
         'step-12': '<strong>12. 온열 케어</strong> - 영양 침투',
         'step-13': '<strong>13. 마무리 샴푸</strong> - 청결 마무리',
         'step-14': '<strong>14. 두피 토닉</strong> - 진정 & 보호',
@@ -299,7 +299,7 @@ const translationsComplete = {
         'headspa-relaxing': '릴렉싱 헤드 스파',
         'headspa-features-title': '프리미엄 헤드스파 특징',
         'headspa-feat-1': '✓ 15단계 전문 두피 스케일링 & 딥 클렌징',
-        'headspa-feat-2': '✓ 아로마테라피 마사지 & 넥·숄더 케어',
+        'headspa-feat-2': '✓ AI 두피진단 진행 & 두피 전문제품 사용',
         'headspa-feat-3': '✓ 프리미엄 샴푸 & 영양 트리트먼트',
         'headspa-feat-4': '✓ 두피 진단 & 맞춤형 케어 프로그램',
         'price-notice': '<strong>참고사항:</strong> 모든 가격은 기본 가격이며, 머리 길이, 모량, 컨디션에 따라 추가 금액이 발생할 수 있습니다.<br><strong>Note:</strong> All prices are starting prices. Additional charges may apply based on hair length, volume, and condition.<br><strong>注意事項:</strong> すべての価格は基本価格です。髪の長さ、量、状態により追加料金が発生する場合があります.'
@@ -345,9 +345,9 @@ const translationsComplete = {
         
         // Service Details
         'service-headspa-title': 'Premium Head Spa',
-        'service-headspa-desc': '15-step professional scalp care, deep cleansing, aromatherapy massage for ultimate relaxation and scalp health',
+        'service-headspa-desc': '15-step professional scalp care, AI scalp diagnosis, professional scalp products for optimal scalp health',
         'headspa-feature-1': '✓ 15-Step Professional Scalp Scaling',
-        'headspa-feature-2': '✓ Aromatherapy Massage',
+        'headspa-feature-2': '✓ AI Scalp Diagnosis',
         'headspa-feature-3': '✓ Premium Shampoo & Treatment',
         'headspa-feature-4': '✓ Shoulder & Neck Massage Included',
         
@@ -400,7 +400,7 @@ const translationsComplete = {
         'step-8': '<strong>8. Scalp Massage 2nd</strong> - Deep relaxation',
         'step-9': '<strong>9. Neck & Shoulder Massage</strong> - Release tension',
         'step-10': '<strong>10. Hair Treatment</strong> - Hair nutrition',
-        'step-11': '<strong>11. Head Massage 3rd</strong> - Aroma oil',
+        'step-11': '<strong>11. Head Massage 3rd</strong> - Professional scalp nutrition oil',
         'step-12': '<strong>12. Heat Care</strong> - Nutrition penetration',
         'step-13': '<strong>13. Final Shampoo</strong> - Clean finish',
         'step-14': '<strong>14. Scalp Tonic</strong> - Soothing & protection',
@@ -604,7 +604,7 @@ const translationsComplete = {
         'headspa-relaxing': 'Relaxing Head Spa',
         'headspa-features-title': 'Premium Head Spa Features',
         'headspa-feat-1': '✓ 15-Step Professional Scalp Scaling & Deep Cleansing',
-        'headspa-feat-2': '✓ Aromatherapy Massage & Neck·Shoulder Care',
+        'headspa-feat-2': '✓ AI Scalp Diagnosis & Professional Scalp Products',
         'headspa-feat-3': '✓ Premium Shampoo & Nutrition Treatment',
         'headspa-feat-4': '✓ Scalp Diagnosis & Custom Care Program',
         'price-notice': '<strong>Note:</strong> All prices are starting prices. Additional charges may apply based on hair length, volume, and condition.<br><strong>참고사항:</strong> 모든 가격은 기본 가격이며, 머리 길이, 모량, 컨디션에 따라 추가 금액이 발생할 수 있습니다.<br><strong>注意事項:</strong> すべての価格は基本価格です。髪の長さ、量、状態により追加料金が発生する場合があります.'
@@ -650,9 +650,9 @@ const translationsComplete = {
         
         // Service Details
         'service-headspa-title': 'プレミアムヘッドスパ',
-        'service-headspa-desc': '15段階の専門頭皮ケア、ディープクレンジング、アロマセラピーマッサージで最高のリラックスと頭皮の健康を同時に',
+        'service-headspa-desc': '15段階の専門頭皮ケア、AI頭皮診断、頭皮専門製品使用で最高の頭皮健康管理',
         'headspa-feature-1': '✓ 15段階専門頭皮スケーリング',
-        'headspa-feature-2': '✓ アロマセラピーマッサージ',
+        'headspa-feature-2': '✓ AI頭皮診断進行',
         'headspa-feature-3': '✓ プレミアムシャンプー&トリートメント',
         'headspa-feature-4': '✓ ショルダー·ネックマッサージ込み',
         
@@ -705,7 +705,7 @@ const translationsComplete = {
         'step-8': '<strong>8. 頭皮マッサージ2次</strong> - 深いリラックス',
         'step-9': '<strong>9. ネック&ショルダーマッサージ</strong> - 緊張緩和',
         'step-10': '<strong>10. ヘアトリートメント</strong> - 毛髪栄養',
-        'step-11': '<strong>11. ヘッドマッサージ3次</strong> - アロマオイル',
+        'step-11': '<strong>11. ヘッドマッサージ3次</strong> - 頭皮専門栄養オイル',
         'step-12': '<strong>12. 温熱ケア</strong> - 栄養浸透',
         'step-13': '<strong>13. 仕上げシャンプー</strong> - 清潔仕上げ',
         'step-14': '<strong>14. 頭皮トニック</strong> - 鎮静 & 保護',
@@ -909,7 +909,7 @@ const translationsComplete = {
         'headspa-relaxing': 'リラクシングヘッドスパ',
         'headspa-features-title': 'プレミアムヘッドスパ特徴',
         'headspa-feat-1': '✓ 15段階専門頭皮スケーリング＆ディープクレンジング',
-        'headspa-feat-2': '✓ アロマセラピーマッサージ＆首・肩ケア',
+        'headspa-feat-2': '✓ AI頭皮診断進行＆頭皮専門製品使用',
         'headspa-feat-3': '✓ プレミアムシャンプー＆栄養トリートメント',
         'headspa-feat-4': '✓ 頭皮診断＆カスタムケアプログラム',
         'price-notice': '<strong>注意事項:</strong> すべての価格は基本価格です。髪の長さ、量、状態により追加料金が発生する場合があります。<br><strong>참고사항:</strong> 모든 가격은 기본 가격이며, 머리 길이, 모량, 컨디션에 따라 추가 금액이 발생할 수 있습니다.<br><strong>Note:</strong> All prices are starting prices. Additional charges may apply based on hair length, volume, and condition.'
