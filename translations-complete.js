@@ -29,7 +29,7 @@ const translationsComplete = {
         'quick-specialty-desc': '헤드스파 · 헤어컷 · 염색 · 펌',
         'quick-experience-title': '👨‍🦰 경력',
         'quick-experience-desc': '20년 이상 경력 디자이너',
-        'hours': '10:00 - 21:00',
+        'hours': '10:00 - 20:00',
         
         // Services
         'services-title': '서비스 & 가격',
@@ -178,7 +178,7 @@ const translationsComplete = {
         'location-subway-2': '<strong>을지로입구역</strong> (2호선) 5번 출구 도보 5분',
         'location-contact-title': '연락처',
         'location-hours-title': '영업시간',
-        'location-hours-weekday': '<strong>월-금:</strong> 10:00 - 21:00',
+        'location-hours-weekday': '<strong>월-금:</strong> 10:00 - 20:00',
         'location-hours-weekend': '<strong>토-일:</strong> 10:00 - 20:00',
         'location-hours-holiday': '<strong>공휴일:</strong> 10:00 - 19:00',
         'location-hours-note': '마지막 예약: 마감 1시간 전',
@@ -483,7 +483,7 @@ const translationsComplete = {
         'location-subway-2': '<strong>Euljiro 1-ga Station</strong> (Line 2) Exit 5, 5 min walk',
         'location-contact-title': 'Contact',
         'location-hours-title': 'Business Hours',
-        'location-hours-weekday': '<strong>Mon-Fri:</strong> 10:00 AM - 9:00 PM',
+        'location-hours-weekday': '<strong>Mon-Fri:</strong> 10:00 AM - 8:00 PM',
         'location-hours-weekend': '<strong>Sat-Sun:</strong> 10:00 AM - 8:00 PM',
         'location-hours-holiday': '<strong>Holidays:</strong> 10:00 AM - 7:00 PM',
         'location-hours-note': 'Last booking: 1 hour before closing',
@@ -639,7 +639,7 @@ const translationsComplete = {
         'quick-specialty-desc': 'ヘッドスパ · カット · カラー · パーマ',
         'quick-experience-title': '👨‍🦰 経歴',
         'quick-experience-desc': '20年以上の経験デザイナー',
-        'hours': '10:00 - 21:00',
+        'hours': '10:00 - 20:00',
         
         // Services
         'services-title': 'プレミアムヘアサービス',
@@ -788,7 +788,7 @@ const translationsComplete = {
         'location-subway-2': '<strong>乙支路入口駅</strong> (2号線) 5番出口徒歩5分',
         'location-contact-title': 'お問い合わせ',
         'location-hours-title': '営業時間',
-        'location-hours-weekday': '<strong>月-金:</strong> 10:00 - 21:00',
+        'location-hours-weekday': '<strong>月-金:</strong> 10:00 - 20:00',
         'location-hours-weekend': '<strong>土-日:</strong> 10:00 - 20:00',
         'location-hours-holiday': '<strong>祝日:</strong> 10:00 - 19:00',
         'location-hours-note': '最終予約: 閉店1時間前',
