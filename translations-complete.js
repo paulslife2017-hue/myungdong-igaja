@@ -32,8 +32,8 @@ const translationsComplete = {
         'hours': '10:00 - 21:00',
         
         // Services
-        'services-title': '프리미엄 헤어 서비스',
-        'services-subtitle': 'Premium Hair & Spa Services',
+        'services-title': '서비스 & 가격',
+        'services-subtitle': 'Services & Price List',
         'badge-popular': '인기',
         'price-from': '시작가',
         'btn-book-service': '예약하기',

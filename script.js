@@ -39,19 +39,29 @@ function changeLanguage(lang) {
         }
     });
     
-    // 구글맵 언어 변경 (iframe 리로드)
+    // 구글맵 언어 변경
     const googleMap = document.getElementById('googleMap');
+    const mapDirectionsLink = document.getElementById('mapDirectionsLink');
+    
     if (googleMap) {
-        const baseUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.8374524636344!2d126.98159!3d37.56366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDMzJzQ5LjIiTiAxMjbCsDU4JzU0LjAiRQ!5e0!3m2!1s';
+        const baseMapUrl = 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=명동8가길+22+중구+서울특별시&zoom=17&language=';
         const langMap = {
             'ko': 'ko',
             'en': 'en',
             'ja': 'ja'
         };
-        // 새로운 URL 생성 (캐시 무효화를 위해 타임스탬프 추가)
-        const newSrc = baseUrl + langMap[lang] + '!2skr!4v' + Date.now();
-        // iframe src 변경
-        googleMap.src = newSrc;
+        googleMap.src = baseMapUrl + langMap[lang];
+    }
+    
+    // 길찾기 버튼 언어 변경
+    if (mapDirectionsLink) {
+        const baseDirectionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=명동8가길+22+중구+서울특별시&hl=';
+        const langMap = {
+            'ko': 'ko',
+            'en': 'en',
+            'ja': 'ja'
+        };
+        mapDirectionsLink.href = baseDirectionsUrl + langMap[lang];
     }
     
     // 로컬 스토리지에 언어 저장
