@@ -1827,3 +1827,201 @@ section {
         padding-bottom: 70px;
     }
 }
+/* ========================================
+   Services & Price List Section
+   ======================================== */
+
+.services-price {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(180deg, #fff 0%, #FFF9F4 100%);
+}
+
+.price-categories {
+    display: grid;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.price-category {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: 0 4px 20px rgba(201, 165, 123, 0.1);
+    transition: all var(--transition-normal);
+}
+
+.price-category:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(201, 165, 123, 0.2);
+}
+
+.price-category.featured-category {
+    background: linear-gradient(135deg, #FFF9F4 0%, #FFE8DB 100%);
+    border: 2px solid var(--primary-color);
+}
+
+.category-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.category-title .icon {
+    font-size: 1.8rem;
+}
+
+.price-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: #FAFAFA;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.price-item:hover {
+    background: #FFF9F4;
+    transform: translateX(4px);
+}
+
+.price-item.featured {
+    background: linear-gradient(135deg, rgba(255, 249, 244, 0.8), rgba(255, 232, 219, 0.8));
+    border-left: 4px solid var(--accent-color);
+}
+
+.service-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    flex: 1;
+}
+
+.service-name small {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-top: 0.25rem;
+}
+
+.service-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    white-space: nowrap;
+    margin-left: var(--spacing-md);
+}
+
+.price-note {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: rgba(201, 165, 123, 0.1);
+    border-left: 3px solid var(--primary-color);
+    border-radius: var(--radius-sm);
+}
+
+/* Head Spa Detail Box */
+.headspa-detail-box {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: white;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--primary-color);
+}
+
+.headspa-detail-box h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.headspa-features {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.headspa-features li {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    padding-left: 0.5rem;
+}
+
+/* Price Notice */
+.price-notice {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, #FFF9F4 0%, #FFE8DB 100%);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--primary-color);
+}
+
+.notice-text {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.notice-text strong {
+    color: var(--primary-color);
+}
+
+/* Responsive Design for Price List */
+@media (max-width: 768px) {
+    .price-category {
+        padding: var(--spacing-md);
+    }
+    
+    .category-title {
+        font-size: 1.3rem;
+    }
+    
+    .price-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .service-name small {
+        margin-top: 0.15rem;
+    }
+    
+    .service-price {
+        margin-left: 0;
+        align-self: flex-end;
+        font-size: 1.2rem;
+    }
+    
+    .headspa-detail-box {
+        padding: var(--spacing-sm);
+    }
+}
+
+@media (min-width: 769px) {
+    .price-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .price-category.featured-category {
+        grid-column: 1 / -1;
+    }
+}
+
