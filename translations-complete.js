@@ -774,3 +774,191 @@ function detectBrowserLanguage() {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { translationsComplete, detectBrowserLanguage };
 }
+        // Price List Services
+        'cat-cut': 'Cut',
+        'cut-stylist': '디자이너 스타일리스트',
+        'cut-note': '*디자인 스타일링은 추가금액 20,000~ 입니다.',
+        
+        'cat-perm': 'Perm',
+        'perm-basic': '일반펌',
+        'perm-mens': '디자인 멘즈펌',
+        'perm-digital': '디자인 디지털펌',
+        'perm-bleach': '탈색 헤어펌',
+        'perm-note': '*기장, 모량, 컨디션에 따라 추가금액이 발생할 수 있습니다.',
+        
+        'cat-add-perm': 'Add Perm',
+        'add-down': '다운펌',
+        'add-roots': '뿌리 볼륨펌',
+        'add-front': '앞머리 디자인펌',
+        
+        'cat-styling': 'Styling',
+        'styling-mens-basic': '남성 기본 드라이',
+        'styling-mens-design': '남성 디자인 드라이',
+        'styling-women-basic': '여성 기본 드라이',
+        'styling-women-design': '여성 디자인 드라이',
+        
+        'cat-shampoo': 'Shampoo',
+        'shampoo-basic': '베이직',
+        'shampoo-premium': '프리미엄',
+        
+        'cat-color': 'Color',
+        'color-roots': '뿌리 염색',
+        'color-mid': '중단발',
+        'color-bleach-roots': '뿌리 탈색',
+        'color-bleach-mid': '탈색',
+        'color-note': '*기장, 모량에 추가 금액이 발생합니다. (30,000~80,000원)',
+        
+        'cat-design-color': 'Design Color',
+        'design-full': '풀 하이라이트',
+        'design-half': '하프 호일',
+        'design-quarter': '쿼터 호일',
+        'design-note': '*각 디자인의 컬러 시술 가격은 상담을 통해 결정됩니다.',
+        
+        'cat-nature': 'Nature',
+        'nature-roots': '뿌리',
+        'nature-mid': '기본',
+        
+        'cat-clinic': 'Clinic',
+        'clinic-shine': '샤인 모발 클리닉',
+        'clinic-bonding': '본딩 모발 클리닉',
+        'clinic-venus': '비너스 모발 클리닉',
+        'clinic-note': '*기장, 모량 추가 금액이 발생합니다. (30,000~80,000원)',
+        
+        'cat-headspa': 'Scalp Head Spa',
+        'headspa-youth': '유스 헤드 스파',
+        'headspa-energy': '에너지 헤드 스파',
+        'headspa-flower': '플라워 헤드 스파',
+        'headspa-relaxing': '릴렉싱 헤드 스파',
+        'headspa-features-title': '프리미엄 헤드스파 특징',
+        'headspa-feat-1': '✓ 15단계 전문 두피 스케일링 & 딥 클렌징',
+        'headspa-feat-2': '✓ 아로마테라피 마사지 & 넥·숄더 케어',
+        'headspa-feat-3': '✓ 프리미엄 샴푸 & 영양 트리트먼트',
+        'headspa-feat-4': '✓ 두피 진단 & 맞춤형 케어 프로그램',
+        
+        'price-notice': '<strong>참고사항:</strong> 모든 가격은 기본 가격이며, 머리 길이, 모량, 컨디션에 따라 추가 금액이 발생할 수 있습니다.<br><strong>Note:</strong> All prices are starting prices. Additional charges may apply based on hair length, volume, and condition.<br><strong>注意事項:</strong> すべての価格は基本価格です。髪の長さ、量、状態により追加料金が発生する場合があります.',
+
+        // English Price List Services
+        'cat-cut': 'Cut',
+        'cut-stylist': 'Designer Stylist',
+        'cut-note': '*Additional ₩20,000~ for design styling.',
+        
+        'cat-perm': 'Perm',
+        'perm-basic': 'Design Basic Perm',
+        'perm-mens': "Design Men's Perm",
+        'perm-digital': 'Design Digital Perm',
+        'perm-bleach': 'Bleached Hair Perm',
+        'perm-note': '*Additional charges may apply based on hair length, volume, and condition.',
+        
+        'cat-add-perm': 'Add Perm',
+        'add-down': 'Down Perm',
+        'add-roots': 'Roots Volume Perm',
+        'add-front': 'Front Design Perm',
+        
+        'cat-styling': 'Styling',
+        'styling-mens-basic': 'Mens Basic Dry',
+        'styling-mens-design': 'Mens Design Dry',
+        'styling-women-basic': 'Women Basic Dry',
+        'styling-women-design': 'Women Design Dry',
+        
+        'cat-shampoo': 'Shampoo',
+        'shampoo-basic': 'Basic',
+        'shampoo-premium': 'Premium (Emerge)',
+        
+        'cat-color': 'Color',
+        'color-roots': 'Roots Color',
+        'color-mid': 'Mid-length',
+        'color-bleach-roots': 'Bleach Roots',
+        'color-bleach-mid': 'Bleach Mid-length',
+        'color-note': '*Additional ₩30,000~80,000 for hair length and volume.',
+        
+        'cat-design-color': 'Design Color',
+        'design-full': 'Full Foil Highlight',
+        'design-half': 'Half Foil Highlight',
+        'design-quarter': 'Quarter Foil Highlight',
+        'design-note': '*Final price determined through consultation.',
+        
+        'cat-nature': 'Nature Color',
+        'nature-roots': 'Roots',
+        'nature-mid': 'Basic',
+        
+        'cat-clinic': 'Hair Clinic',
+        'clinic-shine': 'Shine Hair Clinic',
+        'clinic-bonding': 'Bonding Hair Clinic',
+        'clinic-venus': 'Venus Hair Clinic',
+        'clinic-note': '*Additional ₩30,000~80,000 for hair length and volume.',
+        
+        'cat-headspa': 'Scalp Head Spa',
+        'headspa-youth': 'Youth Head Spa',
+        'headspa-energy': 'Energy Head Spa',
+        'headspa-flower': 'Flower Head Spa',
+        'headspa-relaxing': 'Relaxing Head Spa',
+        'headspa-features-title': 'Premium Head Spa Features',
+        'headspa-feat-1': '✓ 15-Step Professional Scalp Scaling & Deep Cleansing',
+        'headspa-feat-2': '✓ Aromatherapy Massage & Neck·Shoulder Care',
+        'headspa-feat-3': '✓ Premium Shampoo & Nutrition Treatment',
+        'headspa-feat-4': '✓ Scalp Diagnosis & Custom Care Program',
+        
+        'price-notice': '<strong>Note:</strong> All prices are starting prices. Additional charges may apply based on hair length, volume, and condition.<br><strong>참고사항:</strong> 모든 가격은 기본 가격이며, 머리 길이, 모량, 컨디션에 따라 추가 금액이 발생할 수 있습니다.<br><strong>注意事項:</strong> すべての価格は基本価格です。髪の長さ、量、状態により追加料金が発生する場合があります.',
+
+        // Japanese Price List Services
+        'cat-cut': 'カット',
+        'cut-stylist': 'デザイナースタイリスト',
+        'cut-note': '*デザインスタイリングは追加料金20,000~となります。',
+        
+        'cat-perm': 'パーマ',
+        'perm-basic': 'デザインベーシックパーマ',
+        'perm-mens': 'デザインメンズパーマ',
+        'perm-digital': 'デザインデジタルパーマ',
+        'perm-bleach': 'ブリーチヘアパーマ',
+        'perm-note': '*髪の長さ、量、コンディションにより追加料金が発生する場合があります。',
+        
+        'cat-add-perm': '追加パーマ',
+        'add-down': 'ダウンパーマ',
+        'add-roots': '根元ボリュームパーマ',
+        'add-front': '前髪デザインパーマ',
+        
+        'cat-styling': 'スタイリング',
+        'styling-mens-basic': '男性ベーシックドライ',
+        'styling-mens-design': '男性デザインドライ',
+        'styling-women-basic': '女性ベーシックドライ',
+        'styling-women-design': '女性デザインドライ',
+        
+        'cat-shampoo': 'シャンプー',
+        'shampoo-basic': 'ベーシック',
+        'shampoo-premium': 'プレミアム',
+        
+        'cat-color': 'カラー',
+        'color-roots': '根元カラー',
+        'color-mid': 'ミディアム',
+        'color-bleach-roots': '根元ブリーチ',
+        'color-bleach-mid': 'ブリーチミディアム',
+        'color-note': '*髪の長さ、量により追加料金が発生します。(30,000~80,000ウォン)',
+        
+        'cat-design-color': 'デザインカラー',
+        'design-full': 'フルフォイルハイライト',
+        'design-half': 'ハーフフォイルハイライト',
+        'design-quarter': 'クォーターフォイルハイライト',
+        'design-note': '*各デザインのカラー施術価格はカウンセリングにより決定されます。',
+        
+        'cat-nature': 'ナチュラルカラー',
+        'nature-roots': '根元',
+        'nature-mid': 'ベーシック',
+        
+        'cat-clinic': 'ヘアクリニック',
+        'clinic-shine': 'シャインヘアクリニック',
+        'clinic-bonding': 'ボンディングヘアクリニック',
+        'clinic-venus': 'ヴィーナスヘアクリニック',
+        'clinic-note': '*髪の長さ、量により追加料金が発生します。(30,000~80,000ウォン)',
+        
+        'cat-headspa': 'スカルプヘッドスパ',
+        'headspa-youth': 'ユースヘッドスパ',
+        'headspa-energy': 'エナジーヘッドスパ',
+        'headspa-flower': 'フラワーヘッドスパ',
+        'headspa-relaxing': 'リラクシングヘッドスパ',
+        'headspa-features-title': 'プレミアムヘッドスパ特徴',
+        'headspa-feat-1': '✓ 15段階専門頭皮スケーリング＆ディープクレンジング',
+        'headspa-feat-2': '✓ アロマセラピーマッサージ＆首・肩ケア',
+        'headspa-feat-3': '✓ プレミアムシャンプー＆栄養トリートメント',
+        'headspa-feat-4': '✓ 頭皮診断＆カスタムケアプログラム',
+        
+        'price-notice': '<strong>注意事項:</strong> すべての価格は基本価格です。髪の長さ、量、状態により追加料金が発生する場合があります。<br><strong>참고사항:</strong> 모든 가격은 기본 가격이며, 머리 길이, 모량, 컨디션에 따라 추가 금액이 발생할 수 있습니다.<br><strong>Note:</strong> All prices are starting prices. Additional charges may apply based on hair length, volume, and condition.',
