@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
     
-    <!-- Homepage - Multiple Languages -->
+    <!-- Homepage (Korean) -->
     <url>
         <loc>https://www.myeongdonghairsalon.co.kr/</loc>
-        <lastmod>2026-03-22</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://www.myeongdonghairsalon.co.kr/?lang=ko"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://www.myeongdonghairsalon.co.kr/?lang=en"/>
@@ -18,57 +17,56 @@
     <!-- Services Section -->
     <url>
         <loc>https://www.myeongdonghairsalon.co.kr/#services</loc>
-        <lastmod>2026-03-22</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://www.myeongdonghairsalon.co.kr/?lang=ko#services"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.myeongdonghairsalon.co.kr/?lang=en#services"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://www.myeongdonghairsalon.co.kr/?lang=ja#services"/>
     </url>
     
     <!-- Headspa Section -->
     <url>
         <loc>https://www.myeongdonghairsalon.co.kr/#headspa</loc>
-        <lastmod>2026-03-22</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://www.myeongdonghairsalon.co.kr/?lang=ko#headspa"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.myeongdonghairsalon.co.kr/?lang=en#headspa"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://www.myeongdonghairsalon.co.kr/?lang=ja#headspa"/>
     </url>
     
     <!-- Gallery Section -->
     <url>
         <loc>https://www.myeongdonghairsalon.co.kr/#gallery</loc>
-        <lastmod>2026-03-22</lastmod>
+        <lastmod>2026-03-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-        <image:image>
-            <image:loc>https://www.myeongdonghairsalon.co.kr/images/gallery/headspa-1.jpg</image:loc>
-            <image:title>Premium Headspa Treatment</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://www.myeongdonghairsalon.co.kr/images/gallery/cut-1.jpg</image:loc>
-            <image:title>Korean Style Haircut</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://www.myeongdonghairsalon.co.kr/images/gallery/color-1.jpg</image:loc>
-            <image:title>Ash Brown Balayage</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://www.myeongdonghairsalon.co.kr/images/gallery/perm-1.jpg</image:loc>
-            <image:title>C-Curl Digital Perm</image:title>
-        </image:image>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://www.myeongdonghairsalon.co.kr/?lang=ko#gallery"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.myeongdonghairsalon.co.kr/?lang=en#gallery"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://www.myeongdonghairsalon.co.kr/?lang=ja#gallery"/>
     </url>
     
     <!-- Reviews Section -->
     <url>
         <loc>https://www.myeongdonghairsalon.co.kr/#reviews</loc>
-        <lastmod>2026-03-22</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://www.myeongdonghairsalon.co.kr/?lang=ko#reviews"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.myeongdonghairsalon.co.kr/?lang=en#reviews"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://www.myeongdonghairsalon.co.kr/?lang=ja#reviews"/>
     </url>
     
     <!-- Location Section -->
     <url>
         <loc>https://www.myeongdonghairsalon.co.kr/#location</loc>
-        <lastmod>2026-03-22</lastmod>
+        <lastmod>2026-03-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://www.myeongdonghairsalon.co.kr/?lang=ko#location"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.myeongdonghairsalon.co.kr/?lang=en#location"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://www.myeongdonghairsalon.co.kr/?lang=ja#location"/>
     </url>
     
 </urlset>
