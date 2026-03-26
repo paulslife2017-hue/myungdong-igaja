@@ -621,8 +621,8 @@ const translationsComplete = {
         'nav-booking': '予約する',
         
         // Hero Section
-        'hero-title': '明洞駅8番出口3分の日本語対応美容室',
-        'hero-subtitle': 'ソウル明洞で一番人気のヘアサロン&ヘッドスパ',
+        'hero-title': '明洞美容室 | 明洞ヘッドスパ',
+        'hero-subtitle': '日本語·英語対応 | 8番出口徒3分',
         'hero-description': '日本人旅行者歓迎 | 日本語スタッフ常駐 | カット·カラー専門',
         'btn-book-now': '今すぐ予約',
         'btn-view-services': 'サービスを見る',
