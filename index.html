@@ -195,7 +195,7 @@
                 "name": "What services does LEEKAJA Myeongdong Hair Salon offer?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "LEEKAJA Myeongdong offers premium headspa (66,000-198,000 KRW), Korean-style haircuts (35,000 KRW), hair coloring (99,000+ KRW), digital perms (140,000+ KRW), and scalp treatments. All services include English and Japanese consultation."
+                    "text": "LEEKAJA Myeongdong offers premium headspa (88,000-228,000 KRW), Korean-style haircuts (35,000 KRW), hair coloring (99,000+ KRW), digital perms (140,000+ KRW), and scalp treatments. All services include English and Japanese consultation."
                 }
             },
             {
@@ -203,7 +203,7 @@
                 "name": "명동 헤드스파 가격은 얼마인가요?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "LEEKAJA 명동점의 헤드스파 가격은 릴렉싱 헤드스파 66,000원부터 유스 헤드스파 198,000원까지 다양합니다. 15단계 전문 두피 케어와 스칼프 마사지가 포함되어 있습니다."
+                    "text": "LEEKAJA 명동점의 헤드스파 가격은 릴렉싱 헤드스파 88,000원부터 유스 헤드스파 198,000원까지 다양합니다. 15단계 전문 두피 케어와 스칼프 마사지가 포함되어 있습니다."
                 }
             },
             {
@@ -361,7 +361,7 @@
                 "name": "What is your most popular service for tourists?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Our Premium Headspa (₩66,000-₩198,000) is most popular among foreign visitors. It includes AI scalp diagnosis, professional scalp products, and specialized scalp treatment - perfect after shopping in Myeongdong!"
+                    "text": "Our Premium Headspa (₩88,000-₩228,000) is most popular among foreign visitors. It includes AI scalp diagnosis, professional scalp products, and specialized scalp treatment - perfect after shopping in Myeongdong!"
                 }
             },
             {
@@ -433,8 +433,8 @@
                     
                     <ul class="nav-menu">
                         <li><a href="#home" data-i18n="nav-home">홈</a></li>
-                        <li class="nav-item-hair"><a href="#services" data-i18n="nav-services">헤어</a></li>
-                        <li class="nav-item-headspa"><a href="#services" onclick="switchToHeadspaTab(event)" data-i18n="nav-headspa">헤드스파</a></li>
+                        <li><a href="#hair" data-i18n="nav-hair">헤어</a></li>
+                        <li><a href="#headspa" data-i18n="nav-headspa">헤드스파</a></li>
                         <li><a href="#gallery" data-i18n="nav-gallery">갤러리</a></li>
                         <li><a href="#reviews" data-i18n="nav-reviews">후기</a></li>
                         <li><a href="#location" data-i18n="nav-location">오시는길</a></li>
@@ -450,17 +450,25 @@
             <div class="hero-slide active">
                 <div class="hero-content">
                     <div class="container">
-                        <h2 class="hero-title" data-i18n="hero-title">명동 No.1 프리미엄 헤어살롱</h2>
-                        <p class="hero-subtitle" data-i18n="hero-subtitle">Myeongdong's Best Hair Salon & Headspa</p>
-                        <p class="hero-description" data-i18n="hero-description">외국인 전문 | 영어·일본어 가능 | 명동역 도보 3분</p>
+                        <div class="hero-tag" data-i18n="hero-tag">Myeongdong No.1 Premium Salon</div>
+                        <h2 class="hero-title">
+                            <span class="gold-text" data-i18n="hero-title-line1">이가자 명동</span><br>
+                            <span data-i18n="hero-title-line2">프리미엄 헤어 & 헤드스파</span>
+                        </h2>
+                        <p class="hero-subtitle" data-i18n="hero-subtitle">Myeongdong's Best Hair Salon & Head Spa</p>
+                        <div class="hero-description">
+                            <span class="hero-desc-item" data-i18n="hero-desc-1">외국인 전문</span>
+                            <span class="hero-desc-item" data-i18n="hero-desc-2">영어·일본어 가능</span>
+                            <span class="hero-desc-item" data-i18n="hero-desc-3">명동역 8번 출구 도보 3분</span>
+                        </div>
                         <div class="hero-buttons">
-                            <a href="#services" class="btn btn-primary" data-i18n="btn-view-services">서비스 보기</a>
-                            <a href="#location" class="btn btn-secondary" data-i18n="btn-location">오시는길</a>
+                            <a href="#headspa" class="btn btn-primary" data-i18n="btn-view-headspa">💆 헤드스파 보기</a>
+                            <a href="#hair" class="btn btn-secondary" data-i18n="btn-view-hair">✂️ 헤어 서비스</a>
                         </div>
                         <div class="hero-badges">
                             <div class="badge">
                                 <span class="badge-icon">⭐</span>
-                                <span class="badge-text">4.9/5.0<br><small data-i18n="badge-reviews">1,248 리뷰</small></span>
+                                <span class="badge-text">4.9 / 5.0<br><small data-i18n="badge-reviews">1,248 리뷰</small></span>
                             </div>
                             <div class="badge">
                                 <span class="badge-icon">👥</span>
@@ -472,6 +480,30 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 오른쪽 장식 -->
+        <div class="hero-deco">
+            <div class="hero-deco-circle">
+                <div class="hero-deco-inner">
+                    <div class="deco-num">20<span style="font-size:1.2rem">+</span></div>
+                    <div class="deco-label" data-i18n="deco-years">Years</div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat-item">
+                    <span class="hero-stat-icon">💆</span>
+                    <span class="hero-stat-text" data-i18n="stat-headspa">헤드스파 <strong>₩88,000~</strong></span>
+                </div>
+                <div class="hero-stat-item">
+                    <span class="hero-stat-icon">✂️</span>
+                    <span class="hero-stat-text" data-i18n="stat-haircut">헤어컷 <strong>₩35,000~</strong></span>
+                </div>
+                <div class="hero-stat-item">
+                    <span class="hero-stat-icon">🌐</span>
+                    <span class="hero-stat-text" data-i18n="stat-lang">한국어 · English · 日本語</span>
                 </div>
             </div>
         </div>
@@ -502,28 +534,14 @@
     </section>
 
 
-    <!-- Services & Price List Section -->
-    <section class="services-price" id="services">
+    <!-- Hair Section -->
+    <section class="services-price" id="hair">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title" data-i18n="services-title">서비스 & 가격</h2>
-                <p class="section-subtitle" data-i18n="services-subtitle">Services & Price List</p>
+                <h2 class="section-title" data-i18n="hair-title">✂️ 헤어 서비스</h2>
+                <p class="section-subtitle" data-i18n="hair-subtitle">Hair Services & Price List</p>
             </div>
-
-            <!-- Service Tab Navigation -->
-            <div class="service-tabs">
-                <button class="service-tab active" data-tab="hair">
-                    <span class="tab-icon">✂️</span>
-                    <span data-i18n="tab-hair">헤어 서비스</span>
-                </button>
-                <button class="service-tab" data-tab="headspa">
-                    <span class="tab-icon">💆‍♀️</span>
-                    <span data-i18n="tab-headspa">헤드스파</span>
-                </button>
-            </div>
-
-            <!-- HAIR TAB -->
-            <div class="tab-content active" id="tab-hair">
+            <div>
             <!-- Service Categories -->
             <div class="price-categories">
                 
@@ -707,10 +725,18 @@
                     <strong>참고사항:</strong> 모든 가격은 기본 가격이며, 머리 길이, 모량, 컨디션에 따라 추가 금액이 발생할 수 있습니다.
                 </p>
             </div>
-            </div><!-- end tab-content hair -->
+            </div>
+        </div>
+    </section>
 
-            <!-- HEADSPA TAB -->
-            <div class="tab-content" id="tab-headspa">
+    <!-- Head Spa Section -->
+    <section class="services-price headspa-section" id="headspa">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="headspa-section-title">💆 헤드스파</h2>
+                <p class="section-subtitle" data-i18n="headspa-section-subtitle">Head Spa Menu & Price</p>
+            </div>
+            <div>
                 
                 <!-- Headspa Overview Cards -->
                 <div class="headspa-overview">
@@ -720,65 +746,62 @@
                     <div class="spa-price-compare">
                         <div class="spa-compare-item relaxing">
                             <div class="compare-price">₩88,000</div>
-                            <div class="compare-name">Relaxing</div>
-                            <div class="compare-time">約 40分</div>
+                            <div class="compare-name" data-i18n="card-relaxing-name">Relaxing Spa</div>
+                            <div class="compare-time" data-i18n="compare-time-40">약 40분</div>
                             <div class="compare-features">
-                                <span>6단계</span>
+                                <span data-i18n="compare-steps-6">6단계</span>
                             </div>
                         </div>
                         <div class="spa-compare-item power">
                             <div class="compare-price">₩120,000</div>
-                            <div class="compare-name">Power</div>
-                            <div class="compare-time">約 1時間</div>
+                            <div class="compare-name" data-i18n="card-power-name">Power Head Spa</div>
+                            <div class="compare-time" data-i18n="compare-time-60">약 1시간</div>
                             <div class="compare-features">
-                                <span>10단계</span>
-                                <span class="feat-badge diag">🔬두피진단</span>
+                                <span data-i18n="compare-steps-10">10단계</span>
+                                <span class="feat-badge diag" data-i18n="compare-diag">🔬두피진단</span>
                             </div>
                         </div>
                         <div class="spa-compare-item energy">
                             <div class="compare-price">₩154,000</div>
-                            <div class="compare-name">Energe</div>
-                            <div class="compare-time">約 1.5時間</div>
+                            <div class="compare-name" data-i18n="card-energy-name">Energe Head Spa</div>
+                            <div class="compare-time" data-i18n="compare-time-90">약 1시간 30분</div>
                             <div class="compare-features">
-                                <span>13단계</span>
-                                <span class="feat-badge diag">🔬두피진단</span>
-                                <span class="feat-badge water">🌊워터폴</span>
+                                <span data-i18n="compare-steps-13">13단계</span>
+                                <span class="feat-badge diag" data-i18n="compare-diag">🔬두피진단</span>
+                                <span class="feat-badge water" data-i18n="compare-waterfall">🌊워터폴</span>
                             </div>
                         </div>
                         <div class="spa-compare-item youth">
                             <div class="compare-price">₩198,000</div>
-                            <div class="compare-name">Youth</div>
-                            <div class="compare-time">約 1.5時間</div>
+                            <div class="compare-name" data-i18n="card-youth-name">Youth Head Spa</div>
+                            <div class="compare-time" data-i18n="compare-time-90">약 1시간 30분</div>
                             <div class="compare-features">
-                                <span>17단계</span>
-                                <span class="feat-badge diag">🔬두피진단</span>
-                                <span class="feat-badge special">🔴적외선</span>
+                                <span data-i18n="compare-steps-17">17단계</span>
+                                <span class="feat-badge diag" data-i18n="compare-diag">🔬두피진단</span>
+                                <span class="feat-badge special" data-i18n="compare-infrared">🔴적외선</span>
                             </div>
                         </div>
                         <div class="spa-compare-item reborn">
                             <div class="compare-price">₩228,000</div>
-                            <div class="compare-name">Reborn</div>
-                            <div class="compare-time">90分</div>
+                            <div class="compare-name" data-i18n="card-reborn-name">Reborn Head Spa</div>
+                            <div class="compare-time" data-i18n="compare-time-90">약 1시간 30분</div>
                             <div class="compare-features">
-                                <span>19단계</span>
-                                <span class="feat-badge diag">🔬두피진단</span>
-                                <span class="feat-badge special">⚡고주파·플라즈마</span>
+                                <span data-i18n="compare-steps-19">19단계</span>
+                                <span class="feat-badge diag" data-i18n="compare-diag">🔬두피진단</span>
+                                <span class="feat-badge special" data-i18n="compare-device">⚡고주파·플라즈마</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- LEEKAJA Only Benefits -->
                     <div class="leekaja-only-box">
-                        <h4>✦ LEEKAJA Only</h4>
+                        <h4 data-i18n="leekaja-only-title">✦ LEEKAJA Only</h4>
                         <div class="leekaja-benefits">
                             <div class="benefit-item">
                                 <span class="benefit-icon">📱</span>
-                                <p>QR코드로 <strong>두피 진단 결과</strong> 전송<br><small>(살롱에서 별도 결제)</small></p>
+                                <p data-i18n="leekaja-qr-title">QR코드로 <strong>두피 진단 결과</strong> 전송<br><small data-i18n="leekaja-qr-note">(살롱에서 별도 결제)</small></p>
                             </div>
-                            <div class="benefit-item">
-                                <span class="benefit-icon">🎁</span>
-                                <p>홈케어 지속을 위한 <strong>"First Care Kit"</strong> 증정</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -787,13 +810,13 @@
                 <div class="headspa-cards-grid">
 
                     <!-- Relaxing Spa Card -->
-                    <div class="headspa-card" id="headspa">
+                    <div class="headspa-card">
                         <div class="headspa-card-header relaxing">
                             <div class="spa-badge">₩88,000</div>
-                            <h3 class="spa-name">Relaxing Spa</h3>
-                            <p class="spa-name-ko">릴렉싱 스파</p>
+                            <h3 class="spa-name" data-i18n="card-relaxing-name">Relaxing Spa</h3>
+                            <p class="spa-name-ko" data-i18n="card-relaxing-name-ko">릴렉싱 스파</p>
                             <div class="spa-meta">
-                                <span class="spa-time">⏱ 약 40분</span>
+                                <span class="spa-time" data-i18n="card-relaxing-time">⏱ 약 40분</span>
                             </div>
                         </div>
                         <div class="headspa-card-body">
@@ -801,43 +824,43 @@
                                 <div class="spa-step">
                                     <span class="step-num">1</span>
                                     <div class="step-info">
-                                        <strong>Recovery Detox Cleanser</strong>
-                                        <p>PGA 성분으로 두피 면역 유지 & 황산화 방지</p>
+                                        <strong data-i18n="step-relaxing-1-title">Recovery Detox Cleanser</strong>
+                                        <p data-i18n="step-relaxing-1-desc">PGA 성분으로 두피 면역 유지 & 황산화 방지</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">2</span>
                                     <div class="step-info">
-                                        <strong>Ion Mist <small>(5-7min)</small></strong>
-                                        <p>이온 미스트로 두피 살균 & 모발 손상 케어</p>
+                                        <strong data-i18n="step-relaxing-2-title">Ion Mist (5-7min)</strong>
+                                        <p data-i18n="step-relaxing-2-desc">이온 미스트로 두피 살균 & 모발 손상 케어</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">3</span>
                                     <div class="step-info">
-                                        <strong>Repairing Scalp Pack</strong>
-                                        <p>17가지 아미노산 & 고보습 단백질 두피 팩</p>
+                                        <strong data-i18n="step-relaxing-3-title">Repairing Scalp Pack</strong>
+                                        <p data-i18n="step-relaxing-3-desc">17가지 아미노산 & 고보습 단백질 두피 팩</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">4</span>
                                     <div class="step-info">
-                                        <strong>Scalp Massage <small>(Hand & Stick)</small></strong>
-                                        <p>혈액순환 & 근막 이완 두피 마사지</p>
+                                        <strong data-i18n="step-relaxing-4-title">Scalp Massage (Hand & Stick)</strong>
+                                        <p data-i18n="step-relaxing-4-desc">혈액순환 & 근막 이완 두피 마사지</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">5</span>
                                     <div class="step-info">
-                                        <strong>Ion Mist <small>(7-10min)</small></strong>
-                                        <p>이온 미스트 심층 케어</p>
+                                        <strong data-i18n="step-relaxing-5-title">Ion Mist (7-10min)</strong>
+                                        <p data-i18n="step-relaxing-5-desc">이온 미스트 심층 케어</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">6</span>
                                     <div class="step-info">
-                                        <strong>Carbonated Scalp Serum</strong>
-                                        <p>탄산수로 모공 노폐물 제거 & PH 균형</p>
+                                        <strong data-i18n="step-relaxing-6-title">Carbonated Scalp Serum</strong>
+                                        <p data-i18n="step-relaxing-6-desc">탄산수로 모공 노폐물 제거 & PH 균형</p>
                                     </div>
                                 </div>
                             </div>
@@ -848,11 +871,11 @@
                     <div class="headspa-card">
                         <div class="headspa-card-header power">
                             <div class="spa-badge">₩120,000</div>
-                            <h3 class="spa-name">Power Head Spa</h3>
-                            <p class="spa-name-ko">파워 헤드 스파</p>
+                            <h3 class="spa-name" data-i18n="card-power-name">Power Head Spa</h3>
+                            <p class="spa-name-ko" data-i18n="card-power-name-ko">파워 헤드 스파</p>
                             <div class="spa-meta">
-                                <span class="spa-time">⏱ 약 1시간</span>
-                                <span class="spa-diagnosis">🔬 두피진단 포함</span>
+                                <span class="spa-time" data-i18n="card-power-time">⏱ 약 1시간</span>
+                                <span class="spa-diagnosis" data-i18n="card-diagnosis">🔬 두피진단 포함</span>
                             </div>
                         </div>
                         <div class="headspa-card-body">
@@ -860,71 +883,71 @@
                                 <div class="spa-step diagnosis-step">
                                     <span class="step-num">1</span>
                                     <div class="step-info">
-                                        <strong>Scalp Diagnosis – Before</strong>
-                                        <p>두피 진단 기기로 시작 전 두피 상태 체크</p>
+                                        <strong data-i18n="step-power-1-title">Scalp Diagnosis – Before</strong>
+                                        <p data-i18n="step-power-1-desc">두피 진단 기기로 시작 전 두피 상태 체크</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">2</span>
                                     <div class="step-info">
-                                        <strong>Recovery Serum <small>(7-10min)</small></strong>
-                                        <p>PGA 고함량 세럼으로 두피 면역 강화 & 각질 제거</p>
+                                        <strong data-i18n="step-power-2-title">Recovery Serum (7-10min)</strong>
+                                        <p data-i18n="step-power-2-desc">PGA 고함량 세럼으로 두피 면역 강화 & 각질 제거</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">3</span>
                                     <div class="step-info">
-                                        <strong>Recovery Detox Cleanser</strong>
-                                        <p>두피 면역 유지 & 황산화 방지 클렌저</p>
+                                        <strong data-i18n="step-power-3-title">Recovery Detox Cleanser</strong>
+                                        <p data-i18n="step-power-3-desc">두피 면역 유지 & 황산화 방지 클렌저</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">4</span>
                                     <div class="step-info">
-                                        <strong>Ion Mist <small>(5-7min)</small></strong>
-                                        <p>이온 미스트로 두피 살균 & 알칼리 분해</p>
+                                        <strong data-i18n="step-power-4-title">Ion Mist (5-7min)</strong>
+                                        <p data-i18n="step-power-4-desc">이온 미스트로 두피 살균 & 알칼리 분해</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">5</span>
                                     <div class="step-info">
-                                        <strong>Repairing Scalp & Hair Pack</strong>
-                                        <p>17가지 아미노산 고보습 두피 & 모발 팩</p>
+                                        <strong data-i18n="step-power-5-title">Repairing Scalp & Hair Pack</strong>
+                                        <p data-i18n="step-power-5-desc">17가지 아미노산 고보습 두피 & 모발 팩</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">6</span>
                                     <div class="step-info">
-                                        <strong>Scalp Massage <small>(Hand & Stick)</small></strong>
-                                        <p>혈액순환 & 근막 이완 마사지</p>
+                                        <strong data-i18n="step-power-6-title">Scalp Massage (Hand & Stick)</strong>
+                                        <p data-i18n="step-power-6-desc">혈액순환 & 근막 이완 마사지</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">7</span>
                                     <div class="step-info">
-                                        <strong>Ion Mist <small>(7-10min)</small></strong>
-                                        <p>심층 이온 미스트 케어</p>
+                                        <strong data-i18n="step-power-7-title">Ion Mist (7-10min)</strong>
+                                        <p data-i18n="step-power-7-desc">심층 이온 미스트 케어</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">8</span>
                                     <div class="step-info">
-                                        <strong>Carbonated Scalp Serum</strong>
-                                        <p>탄산수 세럼으로 두피 정화</p>
+                                        <strong data-i18n="step-power-8-title">Carbonated Scalp Serum</strong>
+                                        <p data-i18n="step-power-8-desc">탄산수 세럼으로 두피 정화</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">9</span>
                                     <div class="step-info">
-                                        <strong>PGA Immunifzation Scalp Tonner</strong>
-                                        <p>화이트 플라워 추출 PGA 두피 토너로 두피 케어</p>
+                                        <strong data-i18n="step-power-9-title">PGA Immunization Scalp Toner</strong>
+                                        <p data-i18n="step-power-9-desc">화이트 플라워 추출 PGA 두피 토너로 두피 케어</p>
                                     </div>
                                 </div>
                                 <div class="spa-step diagnosis-step">
                                     <span class="step-num">10</span>
                                     <div class="step-info">
-                                        <strong>Scalp Diagnosis – After</strong>
-                                        <p>시술 전후 두피 상태 비교 진단</p>
+                                        <strong data-i18n="step-power-10-title">Scalp Diagnosis – After</strong>
+                                        <p data-i18n="step-power-10-desc">시술 전후 두피 상태 비교 진단</p>
                                     </div>
                                 </div>
                             </div>
@@ -935,12 +958,12 @@
                     <div class="headspa-card">
                         <div class="headspa-card-header energy">
                             <div class="spa-badge">₩154,000</div>
-                            <h3 class="spa-name">Energe Head Spa</h3>
-                            <p class="spa-name-ko">에너지 헤드 스파</p>
+                            <h3 class="spa-name" data-i18n="card-energy-name">Energe Head Spa</h3>
+                            <p class="spa-name-ko" data-i18n="card-energy-name-ko">에너지 헤드 스파</p>
                             <div class="spa-meta">
-                                <span class="spa-time">⏱ 약 1시간 30분</span>
-                                <span class="spa-diagnosis">🔬 두피진단 포함</span>
-                                <span class="spa-waterfall">🌊 워터폴 포함</span>
+                                <span class="spa-time" data-i18n="card-energy-time">⏱ 약 1시간 30분</span>
+                                <span class="spa-diagnosis" data-i18n="card-diagnosis">🔬 두피진단 포함</span>
+                                <span class="spa-waterfall" data-i18n="card-waterfall">🌊 워터폴 포함</span>
                             </div>
                         </div>
                         <div class="headspa-card-body">
@@ -948,92 +971,92 @@
                                 <div class="spa-step diagnosis-step">
                                     <span class="step-num">1</span>
                                     <div class="step-info">
-                                        <strong>Scalp Diagnosis – Before</strong>
-                                        <p>두피 진단 기기로 시작 전 두피 상태 체크</p>
+                                        <strong data-i18n="step-power-1-title">Scalp Diagnosis – Before</strong>
+                                        <p data-i18n="step-power-1-desc">두피 진단 기기로 시작 전 두피 상태 체크</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">2</span>
                                     <div class="step-info">
-                                        <strong>Recovery Serum <small>(7-10min)</small></strong>
-                                        <p>PGA 고함량 세럼으로 두피 면역 강화 & 각질 제거</p>
+                                        <strong data-i18n="step-power-2-title">Recovery Serum (7-10min)</strong>
+                                        <p data-i18n="step-power-2-desc">PGA 고함량 세럼으로 두피 면역 강화 & 각질 제거</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">3</span>
                                     <div class="step-info">
-                                        <strong>Recovery Detox Cleanser</strong>
-                                        <p>두피 면역 유지 & 황산화 방지 클렌저</p>
+                                        <strong data-i18n="step-power-3-title">Recovery Detox Cleanser</strong>
+                                        <p data-i18n="step-power-3-desc">두피 면역 유지 & 황산화 방지 클렌저</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">4</span>
                                     <div class="step-info">
-                                        <strong>Ion Mist <small>(5-7min)</small></strong>
-                                        <p>이온 미스트로 두피 살균 & 알칼리 분해</p>
+                                        <strong data-i18n="step-power-4-title">Ion Mist (5-7min)</strong>
+                                        <p data-i18n="step-power-4-desc">이온 미스트로 두피 살균 & 알칼리 분해</p>
                                     </div>
                                 </div>
                                 <div class="spa-step waterfall-step">
                                     <span class="step-num">5</span>
                                     <div class="step-info">
-                                        <strong>🌊 Aroma Waterfall <small>(5min)</small></strong>
-                                        <p>LEEKAJA 전문 아로마 워터폴 테라피 – 릴렉싱 스파의 하이라이트</p>
+                                        <strong data-i18n="step-energy-5-title">🌊 Aroma Waterfall (5min)</strong>
+                                        <p data-i18n="step-energy-5-desc">LEEKAJA 전문 아로마 워터폴 테라피 – 릴렉싱 스파의 하이라이트</p>
                                     </div>
                                 </div>
                                 <div class="spa-step waterfall-step">
                                     <span class="step-num">6</span>
                                     <div class="step-info">
-                                        <strong>🌊 Sparkling Waterfall <small>(5min)</small></strong>
-                                        <p>탄산 탭으로 전환 – 탄산수 워터폴로 모공 개방 & 혈액순환</p>
+                                        <strong data-i18n="step-energy-6-title">🌊 Sparkling Waterfall (5min)</strong>
+                                        <p data-i18n="step-energy-6-desc">탄산 탭으로 전환 – 탄산수 워터폴로 모공 개방 & 혈액순환</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">7</span>
                                     <div class="step-info">
-                                        <strong>Repairing Scalp & Hair Pack</strong>
-                                        <p>17가지 아미노산 고보습 두피 & 모발 팩</p>
+                                        <strong data-i18n="step-power-5-title">Repairing Scalp & Hair Pack</strong>
+                                        <p data-i18n="step-power-5-desc">17가지 아미노산 고보습 두피 & 모발 팩</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">8</span>
                                     <div class="step-info">
-                                        <strong>Scalp Massage <small>(Hand & Stick)</small></strong>
-                                        <p>혈액순환 & 근막 이완 마사지</p>
+                                        <strong data-i18n="step-power-6-title">Scalp Massage (Hand & Stick)</strong>
+                                        <p data-i18n="step-power-6-desc">혈액순환 & 근막 이완 마사지</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">9</span>
                                     <div class="step-info">
-                                        <strong>Ion Mist <small>(7-10min)</small></strong>
-                                        <p>심층 이온 미스트 케어</p>
+                                        <strong data-i18n="step-power-7-title">Ion Mist (7-10min)</strong>
+                                        <p data-i18n="step-power-7-desc">심층 이온 미스트 케어</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">10</span>
                                     <div class="step-info">
-                                        <strong>Carbonated Scalp Serum</strong>
-                                        <p>탄산수 세럼으로 두피 정화</p>
+                                        <strong data-i18n="step-power-8-title">Carbonated Scalp Serum</strong>
+                                        <p data-i18n="step-power-8-desc">탄산수 세럼으로 두피 정화</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">11</span>
                                     <div class="step-info">
-                                        <strong>PGA Immunifzation Scalp Tonner</strong>
-                                        <p>화이트 플라워 추출 PGA 두피 토너로 두피 케어</p>
+                                        <strong data-i18n="step-power-9-title">PGA Immunization Scalp Toner</strong>
+                                        <p data-i18n="step-power-9-desc">화이트 플라워 추출 PGA 두피 토너로 두피 케어</p>
                                     </div>
                                 </div>
                                 <div class="spa-step diagnosis-step">
                                     <span class="step-num">12</span>
                                     <div class="step-info">
-                                        <strong>Scalp Diagnosis – After</strong>
-                                        <p>시술 전후 두피 상태 비교 진단</p>
+                                        <strong data-i18n="step-power-10-title">Scalp Diagnosis – After</strong>
+                                        <p data-i18n="step-power-10-desc">시술 전후 두피 상태 비교 진단</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">13</span>
                                     <div class="step-info">
-                                        <strong>Simple Styling</strong>
-                                        <p>간단 스타일링 (스타일에 따라 추가금액 발생)</p>
+                                        <strong data-i18n="step-energy-13-title">Simple Styling</strong>
+                                        <p data-i18n="step-energy-13-desc">간단 스타일링 (스타일에 따라 추가금액 발생)</p>
                                     </div>
                                 </div>
                             </div>
@@ -1044,79 +1067,79 @@
                     <div class="headspa-card">
                         <div class="headspa-card-header youth">
                             <div class="spa-badge">₩198,000</div>
-                            <h3 class="spa-name">Youth Head Spa</h3>
-                            <p class="spa-name-ko">유스 헤드 스파</p>
+                            <h3 class="spa-name" data-i18n="card-youth-name">Youth Head Spa</h3>
+                            <p class="spa-name-ko" data-i18n="card-youth-name-ko">유스 헤드 스파</p>
                             <div class="spa-meta">
-                                <span class="spa-time">⏱ 약 1시간 30분</span>
-                                <span class="spa-diagnosis">🔬 두피진단 포함</span>
+                                <span class="spa-time" data-i18n="card-youth-time">⏱ 약 1시간 30분</span>
+                                <span class="spa-diagnosis" data-i18n="card-diagnosis">🔬 두피진단 포함</span>
                             </div>
                         </div>
                         <div class="headspa-card-body">
                             <!-- 1~10단계 (에너지 스파와 동일) -->
                             <div class="reborn-shared-steps youth-shared">
-                                <p class="reborn-shared-label">① 에너지 헤드스파와 동일 (1~10단계 포함)</p>
+                                <p class="reborn-shared-label" data-i18n="youth-shared-label">① 에너지 헤드스파와 동일 (1~10단계 포함)</p>
                                 <div class="reborn-shared-grid">
-                                    <span>🔬 두피 진단(전)</span>
-                                    <span>💉 리커버리 세럼</span>
-                                    <span>🧴 디톡스 클렌저</span>
-                                    <span>💨 이온 미스트(5-7분)</span>
-                                    <span>🌊 아로마 워터폴</span>
-                                    <span>🌊 스파클링 워터폴</span>
-                                    <span>🧬 스칼프&헤어 팩</span>
-                                    <span>✋ 두피 마사지</span>
-                                    <span>💨 이온 미스트(7-10분)</span>
-                                    <span>🫧 탄산 스칼프 세럼</span>
+                                    <span data-i18n="spa-before-diag">🔬 두피 진단(전)</span>
+                                    <span data-i18n="spa-recovery-serum">💉 리커버리 세럼</span>
+                                    <span data-i18n="spa-detox-cleanser">🧴 디톡스 클렌저</span>
+                                    <span data-i18n="spa-ion-mist-s">💨 이온 미스트(5-7분)</span>
+                                    <span data-i18n="spa-aroma-waterfall">🌊 아로마 워터폴</span>
+                                    <span data-i18n="spa-sparkling-waterfall">🌊 스파클링 워터폴</span>
+                                    <span data-i18n="spa-hair-pack">🧬 스칼프&헤어 팩</span>
+                                    <span data-i18n="spa-massage">✋ 두피 마사지</span>
+                                    <span data-i18n="spa-ion-mist-l">💨 이온 미스트(7-10분)</span>
+                                    <span data-i18n="spa-carbonated">🫧 탄산 스칼프 세럼</span>
                                 </div>
                             </div>
-                            <div class="reborn-additional-label">② 유스 전용 추가 케어 (11~17단계)</div>
+                            <div class="reborn-additional-label" data-i18n="youth-additional-label">② 유스 전용 추가 케어 (11~17단계)</div>
                             <div class="spa-steps-grid">
                                 <div class="spa-step">
                                     <span class="step-num">11</span>
                                     <div class="step-info">
-                                        <strong>Carbonated Scalp Serum</strong>
-                                        <p>탄산수로 모공 노폐물 제거 & PH 균형 조절</p>
+                                        <strong data-i18n="step-power-8-title">Carbonated Scalp Serum</strong>
+                                        <p data-i18n="step-youth-11-desc">탄산수로 모공 노폐물 제거 & PH 균형 조절</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">12</span>
                                     <div class="step-info">
-                                        <strong>Laural Aroma Mist</strong>
-                                        <p>비타민 A·C·철분·칼슘 등 풍부한 월계수잎 아로마 미스트 – 항염 & 면역 강화</p>
+                                        <strong data-i18n="step-youth-12-title">Laurel Aroma Mist</strong>
+                                        <p data-i18n="step-youth-12-desc">비타민 A·C·철분·칼슘 등 풍부한 월계수잎 아로마 미스트 – 항염 & 면역 강화</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">13</span>
                                     <div class="step-info">
-                                        <strong>PGA Immunifzation Scalp Tonner</strong>
-                                        <p>화이트 플라워 추출 PGA 두피 토너</p>
+                                        <strong data-i18n="step-power-9-title">PGA Immunization Scalp Toner</strong>
+                                        <p data-i18n="step-youth-13-desc">화이트 플라워 추출 PGA 두피 토너</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">14</span>
                                     <div class="step-info">
-                                        <strong>Hair Leave In Treatment</strong>
-                                        <p>손상 모발 영양 공급 & 외부 자극 (자외선·스타일링·오염) 보호</p>
+                                        <strong data-i18n="step-youth-14-title">Hair Leave In Treatment</strong>
+                                        <p data-i18n="step-youth-14-desc">손상 모발 영양 공급 & 외부 자극 (자외선·스타일링·오염) 보호</p>
                                     </div>
                                 </div>
                                 <div class="spa-step special-step">
                                     <span class="step-num">15</span>
                                     <div class="step-info">
-                                        <strong>🔴 Red Light (Infrared Light)</strong>
-                                        <p>적외선 혈액순환 촉진 & 세포 활성화 – 모발 성장 촉진</p>
+                                        <strong data-i18n="step-youth-15-title">🔴 Red Light (Infrared Light)</strong>
+                                        <p data-i18n="step-youth-15-desc">적외선 혈액순환 촉진 & 세포 활성화 – 모발 성장 촉진</p>
                                     </div>
                                 </div>
                                 <div class="spa-step diagnosis-step">
                                     <span class="step-num">16</span>
                                     <div class="step-info">
-                                        <strong>Scalp Diagnosis – After</strong>
-                                        <p>시술 전후 두피 상태 비교 진단</p>
+                                        <strong data-i18n="step-power-10-title">Scalp Diagnosis – After</strong>
+                                        <p data-i18n="step-power-10-desc">시술 전후 두피 상태 비교 진단</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">17</span>
                                     <div class="step-info">
-                                        <strong>Simple Styling</strong>
-                                        <p>간단 스타일링 (스타일에 따라 추가금액 발생)</p>
+                                        <strong data-i18n="step-energy-13-title">Simple Styling</strong>
+                                        <p data-i18n="step-energy-13-desc">간단 스타일링 (스타일에 따라 추가금액 발생)</p>
                                     </div>
                                 </div>
                             </div>
@@ -1127,94 +1150,94 @@
                     <div class="headspa-card reborn-card">
                         <div class="headspa-card-header reborn">
                             <div class="spa-badge premium">₩228,000</div>
-                            <h3 class="spa-name">Reborn Head Spa</h3>
-                            <p class="spa-name-ko">리본 헤드 스파 <span class="spa-duration-tag">90MIN</span></p>
+                            <h3 class="spa-name" data-i18n="card-reborn-name">Reborn Head Spa</h3>
+                            <p class="spa-name-ko" data-i18n="card-reborn-name-ko">리본 헤드 스파</p>
                             <div class="spa-meta">
-                                <span class="spa-time">⏱ 90분</span>
-                                <span class="spa-diagnosis">🔬 두피진단 포함</span>
-                                <span class="spa-special">⚡ 특수 디바이스</span>
+                                <span class="spa-time" data-i18n="card-reborn-time">⏱ 약 1시간 30분</span>
+                                <span class="spa-diagnosis" data-i18n="card-diagnosis">🔬 두피진단 포함</span>
+                                <span class="spa-special" data-i18n="card-special-device">⚡ 특수 디바이스</span>
                             </div>
                         </div>
                         <div class="headspa-card-body">
                             <!-- 1~10단계 (파워 스파와 동일) -->
                             <div class="reborn-shared-steps">
-                                <p class="reborn-shared-label">① 파워 헤드스파와 동일 (1~10단계)</p>
+                                <p class="reborn-shared-label" data-i18n="reborn-shared-label-power">① 파워 헤드스파와 동일 (1~10단계)</p>
                                 <div class="reborn-shared-grid">
-                                    <span>🔬 두피 진단(전)</span>
-                                    <span>💉 리커버리 세럼</span>
-                                    <span>🧴 디톡스 클렌저</span>
-                                    <span>💨 이온 미스트(5-7분)</span>
-                                    <span>🧬 스칼프&헤어 팩</span>
-                                    <span>✋ 두피 마사지</span>
-                                    <span>💨 이온 미스트(7-10분)</span>
-                                    <span>🫧 탄산 스칼프 세럼</span>
-                                    <span>🌸 PGA 스칼프 토너</span>
-                                    <span>🔬 두피 진단(후)</span>
+                                    <span data-i18n="spa-before-diag">🔬 두피 진단(전)</span>
+                                    <span data-i18n="spa-recovery-serum">💉 리커버리 세럼</span>
+                                    <span data-i18n="spa-detox-cleanser">🧴 디톡스 클렌저</span>
+                                    <span data-i18n="spa-ion-mist-s">💨 이온 미스트(5-7분)</span>
+                                    <span data-i18n="spa-hair-pack">🧬 스칼프&헤어 팩</span>
+                                    <span data-i18n="spa-massage">✋ 두피 마사지</span>
+                                    <span data-i18n="spa-ion-mist-l">💨 이온 미스트(7-10분)</span>
+                                    <span data-i18n="spa-carbonated">🫧 탄산 스칼프 세럼</span>
+                                    <span data-i18n="spa-pga-toner">🌸 PGA 스칼프 토너</span>
+                                    <span data-i18n="spa-after-diag">🔬 두피 진단(후)</span>
                                 </div>
                             </div>
-                            <div class="reborn-additional-label">② 리본 전용 추가 케어 (11~19단계)</div>
+                            <div class="reborn-additional-label" data-i18n="reborn-additional-label-power">② 리본 전용 추가 케어 (11~19단계)</div>
                             <div class="spa-steps">
                                 <div class="spa-step">
                                     <span class="step-num">11</span>
                                     <div class="step-info">
-                                        <strong>Ion Mist <small>(7-10min)</small></strong>
-                                        <p>이온 미스트 심층 케어</p>
+                                        <strong data-i18n="step-power-7-title">Ion Mist (7-10min)</strong>
+                                        <p data-i18n="step-power-7-desc">이온 미스트 심층 케어</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">12</span>
                                     <div class="step-info">
-                                        <strong>Carbonated Scalp Serum</strong>
-                                        <p>탄산수로 모공 노폐물 제거 & PH 균형</p>
+                                        <strong data-i18n="step-power-8-title">Carbonated Scalp Serum</strong>
+                                        <p data-i18n="step-reborn-12-desc">탄산수로 모공 노폐물 제거 & PH 균형</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">13</span>
                                     <div class="step-info">
-                                        <strong>Laural Aroma Mist</strong>
-                                        <p>월계수잎 아로마 미스트 – 항염 & 면역 강화</p>
+                                        <strong data-i18n="step-reborn-13-title">Laurel Aroma Mist</strong>
+                                        <p data-i18n="step-reborn-13-desc">월계수잎 아로마 미스트 – 항염 & 면역 강화</p>
                                     </div>
                                 </div>
                                 <div class="spa-step special-step">
                                     <span class="step-num">14</span>
                                     <div class="step-info">
-                                        <strong>⚡ Radio Frequency Scalp Care Device</strong>
-                                        <p>고주파 두피 케어 – 모근 활성화 · 두피 탄력 · 긴장 완화 · 전반적 두피 컨디션 개선</p>
+                                        <strong data-i18n="step-reborn-14-title">⚡ Radio Frequency Scalp Care Device</strong>
+                                        <p data-i18n="step-reborn-14-desc">고주파 두피 케어 – 모근 활성화 · 두피 탄력 · 긴장 완화 · 전반적 두피 컨디션 개선</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">15</span>
                                     <div class="step-info">
-                                        <strong>PGA Immunifzation Scalp Tonner</strong>
-                                        <p>화이트 플라워 추출 PGA 두피 토너</p>
+                                        <strong data-i18n="step-power-9-title">PGA Immunization Scalp Toner</strong>
+                                        <p data-i18n="step-reborn-15-desc">화이트 플라워 추출 PGA 두피 토너</p>
                                     </div>
                                 </div>
                                 <div class="spa-step special-step">
                                     <span class="step-num">16</span>
                                     <div class="step-info">
-                                        <strong>⚡ Plasma Beauty Device</strong>
-                                        <p>플라즈마 – 콜라겐·엘라스틴 생성 · 피부 재생 · 항균 항염 효과</p>
+                                        <strong data-i18n="step-reborn-16-title">⚡ Plasma Beauty Device</strong>
+                                        <p data-i18n="step-reborn-16-desc">플라즈마 – 콜라겐·엘라스틴 생성 · 피부 재생 · 항균 항염 효과</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">17</span>
                                     <div class="step-info">
-                                        <strong>Hair Leave In Treatment</strong>
-                                        <p>손상 모발 영양 공급 & 외부 자극 보호</p>
+                                        <strong data-i18n="step-reborn-17-title">Hair Leave In Treatment</strong>
+                                        <p data-i18n="step-reborn-17-desc">손상 모발 영양 공급 & 외부 자극 보호</p>
                                     </div>
                                 </div>
                                 <div class="spa-step diagnosis-step">
                                     <span class="step-num">18</span>
                                     <div class="step-info">
-                                        <strong>Scalp Diagnosis – After</strong>
-                                        <p>시술 전후 두피 상태 비교 진단</p>
+                                        <strong data-i18n="step-power-10-title">Scalp Diagnosis – After</strong>
+                                        <p data-i18n="step-power-10-desc">시술 전후 두피 상태 비교 진단</p>
                                     </div>
                                 </div>
                                 <div class="spa-step">
                                     <span class="step-num">19</span>
                                     <div class="step-info">
-                                        <strong>Simple Styling</strong>
-                                        <p>간단 스타일링 (스타일에 따라 추가금액 발생)</p>
+                                        <strong data-i18n="step-energy-13-title">Simple Styling</strong>
+                                        <p data-i18n="step-energy-13-desc">간단 스타일링 (스타일에 따라 추가금액 발생)</p>
                                     </div>
                                 </div>
                             </div><!-- end spa-steps -->
@@ -1223,15 +1246,8 @@
 
                 </div><!-- end headspa-cards-grid -->
 
-                <!-- Price Notice for Headspa -->
-                <div class="price-notice">
-                    <p class="notice-text">
-                        <strong>참고사항:</strong> 스타일링은 스타일에 따라 추가금액이 발생할 수 있습니다. 두피 상태에 따라 전문 테라피스트가 맞춤 케어를 제공합니다.
-                    </p>
-                </div>
 
-            </div><!-- end tab-content headspa -->
-
+            </div>
         </div>
     </section>
 
@@ -1610,11 +1626,11 @@
                 <div class="footer-section">
                     <h4 data-i18n="footer-services-title">서비스</h4>
                     <ul class="footer-links">
-                        <li><a href="#services" onclick="switchToHeadspaTab(event)" data-i18n="footer-link-headspa">헤드스파</a></li>
-                        <li><a href="#services" data-i18n="footer-link-haircut">헤어컷</a></li>
-                        <li><a href="#services" data-i18n="footer-link-color">염색</a></li>
-                        <li><a href="#services" data-i18n="footer-link-perm">펌</a></li>
-                        <li><a href="#services" data-i18n="footer-link-treatment">트리트먼트</a></li>
+                        <li><a href="#headspa" data-i18n="footer-link-headspa">헤드스파</a></li>
+                        <li><a href="#hair" data-i18n="footer-link-haircut">헤어컷</a></li>
+                        <li><a href="#hair" data-i18n="footer-link-color">염색</a></li>
+                        <li><a href="#hair" data-i18n="footer-link-perm">펌</a></li>
+                        <li><a href="#hair" data-i18n="footer-link-treatment">트리트먼트</a></li>
                     </ul>
                 </div>
 
@@ -1662,21 +1678,31 @@
     <!-- Bottom Navigation Bar (Mobile Menu) -->
     <nav class="bottom-nav">
         <a href="#home" class="bottom-nav-item">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
             <span data-i18n="nav-home">홈</span>
         </a>
-        <a href="#services" class="bottom-nav-item">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        <a href="#hair" class="bottom-nav-item">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 3C9 3 8 7 11 9C11 9 7 9 6 13C6 13 9 11 12 12C12 12 10 14 10 17C10 17 12 15 14 15C14 15 13 18 15 20"></path>
+                <path d="M15 3C15 3 16 7 13 9C13 9 17 9 18 13C18 13 15 11 12 12"></path>
             </svg>
-            <span data-i18n="nav-services">서비스</span>
+            <span data-i18n="nav-hair">헤어</span>
+        </a>
+        <a href="#headspa" class="bottom-nav-item">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="5"></circle>
+                <path d="M12 13v4"></path>
+                <path d="M8 17h8"></path>
+                <path d="M7 6C7 6 5 5 5 8"></path>
+                <path d="M17 6C17 6 19 5 19 8"></path>
+            </svg>
+            <span data-i18n="nav-headspa">헤드스파</span>
         </a>
         <a href="#gallery" class="bottom-nav-item">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                 <circle cx="8.5" cy="8.5" r="1.5"></circle>
                 <polyline points="21 15 16 10 5 21"></polyline>
@@ -1684,13 +1710,13 @@
             <span data-i18n="nav-gallery">갤러리</span>
         </a>
         <a href="#reviews" class="bottom-nav-item">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
             </svg>
             <span data-i18n="nav-reviews">후기</span>
         </a>
         <a href="#location" class="bottom-nav-item">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
             </svg>

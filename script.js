@@ -123,57 +123,28 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // ============================================================
-// 서비스 탭 전환 기능 (헤어 / 헤드스파)
+// 모바일 바텀 네비 활성화 (현재 섹션 하이라이트)
 // ============================================================
-function initServiceTabs() {
-    const tabs = document.querySelectorAll('.service-tab');
-    const tabContents = document.querySelectorAll('.tab-content');
+function updateBottomNavActive() {
+    const sections = ['home','hair','headspa','gallery','reviews','location'];
+    const navItems = document.querySelectorAll('.bottom-nav-item');
+    let current = 'home';
+    const scrollY = window.pageYOffset + window.innerHeight / 3;
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const targetTab = tab.getAttribute('data-tab');
-            
-            // 탭 활성화
-            tabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-            
-            // 콘텐츠 전환
-            tabContents.forEach(content => {
-                content.classList.remove('active');
-            });
-            const targetContent = document.getElementById('tab-' + targetTab);
-            if (targetContent) {
-                targetContent.classList.add('active');
-            }
-        });
+    sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= scrollY) current = id;
+    });
+
+    navItems.forEach(item => {
+        item.classList.remove('active');
+        const href = item.getAttribute('href');
+        if (href === '#' + current) item.classList.add('active');
     });
 }
 
-// 헤드스파 탭으로 전환하는 함수 (네비게이션 클릭 시)
-function switchToHeadspaTab(e) {
-    e.preventDefault();
-    
-    // 서비스 섹션으로 스크롤
-    const servicesSection = document.getElementById('services');
-    if (servicesSection) {
-        servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-    
-    // 헤드스파 탭 활성화
-    setTimeout(() => {
-        const headspaTab = document.querySelector('.service-tab[data-tab="headspa"]');
-        if (headspaTab) {
-            headspaTab.click();
-        }
-    }, 400);
-    
-    return false;
-}
-
-// DOM 로드 후 탭 초기화
-document.addEventListener('DOMContentLoaded', () => {
-    initServiceTabs();
-});
+window.addEventListener('scroll', updateBottomNavActive, { passive: true });
+document.addEventListener('DOMContentLoaded', updateBottomNavActive);
 
 // 모바일 메뉴 토글
 if (mobileMenuToggle && navMenu) {
