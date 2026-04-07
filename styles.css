@@ -2294,6 +2294,151 @@ section {
 
 
 /* ============================================================
+   헤어 가격표 (테이블 스타일)
+   ============================================================ */
+
+/* 전체 래퍼: 2열 그리드 */
+.hair-price-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+/* 카테고리 카드 */
+.hair-price-group {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(201, 165, 123, 0.10);
+    border: 1px solid #f0e6d6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 카테고리 헤더 */
+.hair-group-header {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.75rem 1.1rem;
+    background: linear-gradient(90deg, #f9f1e7 0%, #fdf6ef 100%);
+    border-bottom: 1.5px solid #eddcc4;
+}
+
+.hair-group-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.hair-group-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #7a5c3a;
+    margin: 0;
+    letter-spacing: 0.2px;
+}
+
+/* 테이블 */
+.hair-table {
+    width: 100%;
+    border-collapse: collapse;
+    flex: 1;
+}
+
+.hair-table tbody tr {
+    border-bottom: 1px solid #f5ece0;
+    transition: background 0.15s;
+}
+
+.hair-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.hair-table tbody tr:hover {
+    background: #fdf6ef;
+}
+
+.hair-table td {
+    padding: 0.6rem 1.1rem;
+    font-size: 0.9rem;
+    color: #3a3028;
+    vertical-align: middle;
+}
+
+.hair-table td.hair-price {
+    text-align: right;
+    font-weight: 700;
+    color: #C9A57B;
+    white-space: nowrap;
+    font-size: 0.95rem;
+}
+
+/* 카테고리 하단 노트 */
+.hair-table-note {
+    font-size: 0.78rem;
+    color: #9a8570;
+    padding: 0.45rem 1.1rem 0.6rem;
+    background: #fdf9f4;
+    border-top: 1px dashed #eddcc4;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* 하단 안내 */
+.hair-price-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+    padding: 0.9rem 1.3rem;
+    background: linear-gradient(90deg, #fdf6ef 0%, #fff9f4 100%);
+    border-radius: 10px;
+    border-left: 3px solid #C9A57B;
+}
+
+.hair-notice-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.05rem;
+}
+
+.hair-price-notice p {
+    font-size: 0.85rem;
+    color: #6a5545;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* 모바일: 1열 */
+@media (max-width: 640px) {
+    .hair-price-wrap {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+    }
+
+    .hair-group-title {
+        font-size: 0.95rem;
+    }
+
+    .hair-table td {
+        padding: 0.55rem 0.9rem;
+        font-size: 0.85rem;
+    }
+
+    .hair-table td.hair-price {
+        font-size: 0.9rem;
+    }
+}
+
+/* 태블릿: 2열 유지 */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .hair-price-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================================
    서비스 탭 네비게이션 (헤어 / 헤드스파)
    ============================================================ */
 .service-tabs {
