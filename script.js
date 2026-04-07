@@ -122,6 +122,30 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// ============================================================
+// 모바일 바텀 네비 활성화 (현재 섹션 하이라이트)
+// ============================================================
+function updateBottomNavActive() {
+    const sections = ['home','hair','headspa','gallery','reviews','location'];
+    const navItems = document.querySelectorAll('.bottom-nav-item');
+    let current = 'home';
+    const scrollY = window.pageYOffset + window.innerHeight / 3;
+
+    sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= scrollY) current = id;
+    });
+
+    navItems.forEach(item => {
+        item.classList.remove('active');
+        const href = item.getAttribute('href');
+        if (href === '#' + current) item.classList.add('active');
+    });
+}
+
+window.addEventListener('scroll', updateBottomNavActive, { passive: true });
+document.addEventListener('DOMContentLoaded', updateBottomNavActive);
+
 // 모바일 메뉴 토글
 if (mobileMenuToggle && navMenu) {
     mobileMenuToggle.addEventListener('click', () => {

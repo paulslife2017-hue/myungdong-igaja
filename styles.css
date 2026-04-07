@@ -404,94 +404,336 @@ img {
 }
 
 /* Hero Section */
+/* ─────────────────────────────────────────
+   HERO – 프리미엄 다크 골드 디자인
+───────────────────────────────────────── */
 .hero {
     position: relative;
-    min-height: 600px;
+    min-height: 680px;
     display: flex;
     align-items: center;
-    /* 고급스러운 로즈 골드 + 라벤더 그라데이션 */
-    background: linear-gradient(135deg, #FFF8F0 0%, #FFE8E8 20%, #F5E6FF 40%, #E8D5FF 60%, #D4C5F9 80%, #C9B8E8 100%);
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1208 30%, #2a1d0a 55%, #1a1208 80%, #0d0d0d 100%);
     overflow: hidden;
 }
 
+/* 골드 빛 배경 파티클 효과 */
 .hero::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path d="M0,300 Q300,100 600,300 T1200,300 L1200,600 L0,600 Z" fill="%23ffffff" opacity="0.1"/></svg>') no-repeat center bottom;
-    background-size: cover;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 80% 60% at 20% 40%, rgba(201,165,123,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 60%, rgba(180,140,90,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 50% 10%, rgba(255,215,120,0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* 빛나는 라인 장식 */
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, transparent 0%, rgba(201,165,123,0.04) 50%, transparent 100%),
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 80px,
+            rgba(201,165,123,0.02) 80px,
+            rgba(201,165,123,0.02) 81px
+        );
+    pointer-events: none;
+}
+
+.hero-slider {
+    width: 100%;
+}
+
+.hero-slide {
+    width: 100%;
 }
 
 .hero-content {
     position: relative;
-    z-index: 1;
-    padding: var(--spacing-xl) 0;
+    z-index: 2;
+    padding: 5rem 0 4rem;
+}
+
+/* 상단 소제목 태그 */
+.hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(201,165,123,0.15);
+    border: 1px solid rgba(201,165,123,0.4);
+    color: #C9A57B;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.6s ease both;
+}
+
+.hero-tag::before {
+    content: '✦';
+    font-size: 0.65rem;
 }
 
 .hero-title {
-    font-size: 3rem;
-    margin-bottom: var(--spacing-sm);
-    color: var(--text-dark);
-    animation: fadeInUp 0.8s ease;
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    color: #fff;
+    letter-spacing: -0.02em;
+    animation: fadeInUp 0.7s ease 0.1s both;
+}
+
+/* 골드 강조 텍스트 */
+.hero-title .gold-text {
+    background: linear-gradient(90deg, #C9A57B 0%, #F0D090 50%, #C9A57B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .hero-subtitle {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: 400;
-    color: var(--primary-dark);
-    margin-bottom: var(--spacing-sm);
-    animation: fadeInUp 0.8s ease 0.2s both;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.01em;
+    animation: fadeInUp 0.7s ease 0.2s both;
 }
 
 .hero-description {
-    font-size: 1.125rem;
-    color: var(--text-light);
-    margin-bottom: var(--spacing-md);
-    animation: fadeInUp 0.8s ease 0.4s both;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.7s ease 0.3s both;
+}
+
+.hero-desc-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.65);
+    font-weight: 500;
+}
+
+.hero-desc-item::before {
+    content: '◆';
+    color: #C9A57B;
+    font-size: 0.45rem;
+}
+
+.hero-desc-item:first-child::before {
+    display: none;
+}
+
+.hero-desc-sep {
+    color: rgba(201,165,123,0.5);
 }
 
 .hero-buttons {
     display: flex;
-    gap: var(--spacing-sm);
+    gap: 1rem;
     flex-wrap: wrap;
-    margin-bottom: var(--spacing-lg);
-    animation: fadeInUp 0.8s ease 0.6s both;
+    margin-bottom: 2.5rem;
+    animation: fadeInUp 0.7s ease 0.4s both;
 }
 
+.hero-buttons .btn-primary {
+    background: linear-gradient(135deg, #C9A57B 0%, #B8935A 100%);
+    color: #fff;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(201,165,123,0.4);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero-buttons .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(201,165,123,0.55);
+    background: linear-gradient(135deg, #D4B08A 0%, #C9A57B 100%);
+}
+
+.hero-buttons .btn-secondary {
+    background: transparent;
+    color: rgba(255,255,255,0.85);
+    border: 1.5px solid rgba(201,165,123,0.5);
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background: rgba(201,165,123,0.12);
+    border-color: rgba(201,165,123,0.8);
+    color: #C9A57B;
+    transform: translateY(-2px);
+}
+
+/* 배지 영역 */
 .hero-badges {
     display: flex;
-    gap: var(--spacing-md);
+    gap: 1rem;
     flex-wrap: wrap;
-    animation: fadeInUp 0.8s ease 0.8s both;
+    animation: fadeInUp 0.7s ease 0.5s both;
 }
 
 .badge {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: var(--spacing-sm) var(--spacing-md);
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+    gap: 0.6rem;
+    padding: 0.65rem 1.1rem;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(201,165,123,0.25);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    background: rgba(201,165,123,0.1);
+    border-color: rgba(201,165,123,0.5);
+    transform: translateY(-2px);
 }
 
 .badge-icon {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 1;
 }
 
 .badge-text {
-    font-size: 0.875rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 700;
     line-height: 1.4;
+    color: #fff;
 }
 
 .badge-text small {
-    font-size: 0.75rem;
+    display: block;
+    font-size: 0.7rem;
     font-weight: 400;
-    color: var(--text-light);
+    color: rgba(255,255,255,0.55);
+}
+
+/* 오른쪽 장식 요소 */
+.hero-deco {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 2;
+    animation: fadeInUp 0.8s ease 0.6s both;
+}
+
+.hero-deco-circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, rgba(201,165,123,0.22) 0%, rgba(201,165,123,0.06) 60%, transparent 100%);
+    border: 1px solid rgba(201,165,123,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-deco-circle::before {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border-radius: 50%;
+    border: 1px dashed rgba(201,165,123,0.2);
+    animation: rotateSlow 20s linear infinite;
+}
+
+.hero-deco-inner {
+    text-align: center;
+    color: rgba(255,255,255,0.9);
+}
+
+.hero-deco-inner .deco-num {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #C9A57B;
+    line-height: 1;
+}
+
+.hero-deco-inner .deco-label {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 0.25rem;
+}
+
+.hero-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.hero-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 1rem;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,165,123,0.15);
+    border-radius: 10px;
+}
+
+.hero-stat-icon {
+    font-size: 1.1rem;
+    width: 28px;
+    text-align: center;
+}
+
+.hero-stat-text {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+}
+
+.hero-stat-text strong {
+    color: #C9A57B;
+    font-weight: 700;
+}
+
+@keyframes rotateSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1024px) {
+    .hero-deco { display: none; }
 }
 
 @keyframes fadeInUp {
@@ -507,24 +749,48 @@ img {
 
 @media (max-width: 768px) {
     .hero {
-        min-height: 500px;
+        min-height: auto;
+        padding-bottom: 2rem;
     }
-    
+    .hero-content {
+        padding: 3rem 0 2rem;
+    }
+    .hero-tag {
+        font-size: 0.72rem;
+        padding: 0.35rem 0.8rem;
+    }
     .hero-title {
         font-size: 2rem;
+        line-height: 1.2;
     }
-    
     .hero-subtitle {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
-    
+    .hero-description {
+        gap: 0.4rem;
+    }
+    .hero-desc-item {
+        font-size: 0.82rem;
+    }
     .hero-buttons {
         flex-direction: column;
+        gap: 0.75rem;
     }
-    
-    .hero-buttons .btn {
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
         width: 100%;
+        justify-content: center;
+        padding: 0.85rem 1.5rem;
     }
+    .hero-badges {
+        gap: 0.6rem;
+    }
+    .badge {
+        padding: 0.5rem 0.8rem;
+        gap: 0.5rem;
+    }
+    .badge-icon { font-size: 1.3rem; }
+    .badge-text { font-size: 0.72rem; }
 }
 
 /* Quick Info Bar */
@@ -1781,19 +2047,20 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
-    padding: 6px 12px;
+    gap: 3px;
+    padding: 5px 4px;
     color: var(--text-light);
     text-decoration: none;
     transition: all var(--transition-fast);
     border-radius: var(--radius-md);
-    min-width: 60px;
+    min-width: 0;
     flex: 1;
-    max-width: 80px;
+    max-width: 64px;
 }
 
 .bottom-nav-item:hover,
-.bottom-nav-item:active {
+.bottom-nav-item:active,
+.bottom-nav-item.active {
     color: var(--primary-color);
     background: linear-gradient(145deg, rgba(255, 249, 244, 0.8), rgba(255, 232, 219, 0.8));
     transform: translateY(-2px);
@@ -2025,3 +2292,629 @@ section {
     }
 }
 
+
+/* ============================================================
+   서비스 탭 네비게이션 (헤어 / 헤드스파)
+   ============================================================ */
+.service-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 2.5rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-tab {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    background: #f0ece8;
+    color: #8a7a6e;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.service-tab .tab-icon {
+    font-size: 1.2rem;
+}
+
+.service-tab.active {
+    background: var(--primary-color, #C9A57B);
+    color: #fff;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.15);
+}
+
+.service-tab:hover:not(.active) {
+    background: #e5ded7;
+    color: #5a4a3e;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+    animation: fadeInTab 0.35s ease;
+}
+
+@keyframes fadeInTab {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   헤드스파 개요 섹션
+   ============================================================ */
+.headspa-overview {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.headspa-intro {
+    color: #6b5b4e;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.leekaja-only-box {
+    background: linear-gradient(135deg, #fdf6ef 0%, #f9ede0 100%);
+    border: 1.5px solid #e8c99e;
+    border-radius: 16px;
+    padding: 1.4rem 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    text-align: left;
+    min-width: 320px;
+    max-width: 560px;
+}
+
+.leekaja-only-box h4 {
+    color: #C9A57B;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.leekaja-benefits {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    flex: 1;
+    min-width: 180px;
+}
+
+.benefit-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.benefit-item p {
+    font-size: 0.88rem;
+    color: #5a4a3e;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.benefit-item small {
+    color: #9a8a7e;
+    font-size: 0.78rem;
+}
+
+/* ============================================================
+   헤드스파 카드 그리드
+   ============================================================ */
+.headspa-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 900px) {
+    .headspa-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .reborn-card {
+        grid-column: 1 / -1;
+    }
+}
+
+/* 헤드스파 카드 */
+.headspa-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.headspa-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.14);
+}
+
+/* 카드 헤더 색상별 */
+.headspa-card-header {
+    padding: 1.5rem 1.6rem 1.3rem;
+    position: relative;
+}
+
+.headspa-card-header.relaxing {
+    background: linear-gradient(135deg, #e8f4f0 0%, #c8e6df 100%);
+}
+.headspa-card-header.power {
+    background: linear-gradient(135deg, #e8edf8 0%, #c8d6f0 100%);
+}
+.headspa-card-header.energy {
+    background: linear-gradient(135deg, #f0eaf8 0%, #d8c8f0 100%);
+}
+.headspa-card-header.youth {
+    background: linear-gradient(135deg, #fdf0e8 0%, #f5d8b8 100%);
+}
+.headspa-card-header.reborn {
+    background: linear-gradient(135deg, #2d2d3e 0%, #1a1a2e 100%);
+}
+
+/* 가격 배지 */
+.spa-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.85);
+    color: #3a3a3a;
+    font-size: 1.15rem;
+    font-weight: 800;
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    letter-spacing: -0.3px;
+}
+
+.headspa-card-header.reborn .spa-badge {
+    background: rgba(201, 165, 123, 0.95);
+    color: #fff;
+}
+
+.spa-badge.premium {
+    background: linear-gradient(135deg, #C9A57B 0%, #b08860 100%);
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+/* 스파 이름 */
+.spa-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #2a2a2a;
+    margin: 0 0 0.2rem;
+}
+
+.headspa-card-header.reborn .spa-name {
+    color: #fff;
+}
+
+.spa-name-ko {
+    font-size: 0.92rem;
+    color: #6b6b6b;
+    margin: 0 0 0.7rem;
+    font-weight: 500;
+}
+
+.headspa-card-header.reborn .spa-name-ko {
+    color: rgba(255,255,255,0.75);
+}
+
+.spa-duration-tag {
+    background: #C9A57B;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+
+/* 메타 정보 */
+.spa-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.spa-time,
+.spa-diagnosis,
+.spa-waterfall,
+.spa-special {
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.25rem 0.7rem;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.65);
+    color: #4a4a4a;
+}
+
+.headspa-card-header.reborn .spa-time,
+.headspa-card-header.reborn .spa-diagnosis,
+.headspa-card-header.reborn .spa-special {
+    background: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.90);
+}
+
+.spa-diagnosis { background: rgba(100, 150, 255, 0.18); color: #3050b0; }
+.spa-waterfall { background: rgba(50, 180, 150, 0.18); color: #1a7060; }
+.spa-special   { background: rgba(180, 80, 200, 0.15); color: #7020a0; }
+
+/* 카드 바디 */
+.headspa-card-body {
+    padding: 1.4rem 1.6rem;
+}
+
+/* 스텝 리스트 */
+.spa-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.spa-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.7rem 0.85rem;
+    border-radius: 10px;
+    background: #fafafa;
+    border: 1px solid #f0ece8;
+    transition: background 0.2s;
+}
+
+.spa-step:hover {
+    background: #f5f0eb;
+}
+
+.spa-step.diagnosis-step {
+    background: #eef4ff;
+    border-color: #c8d8f8;
+}
+
+.spa-step.waterfall-step {
+    background: #edfaf5;
+    border-color: #b8e8d8;
+}
+
+.spa-step.special-step {
+    background: #f5eeff;
+    border-color: #d8c0f8;
+}
+
+.step-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    background: #C9A57B;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.spa-step.diagnosis-step .step-num {
+    background: #4a72d8;
+}
+.spa-step.waterfall-step .step-num {
+    background: #2aaa88;
+}
+.spa-step.special-step .step-num {
+    background: #8a30c0;
+}
+
+.step-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.step-info strong {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 0.2rem;
+    line-height: 1.3;
+}
+
+.step-info strong small {
+    font-weight: 500;
+    color: #888;
+    font-size: 0.75rem;
+}
+
+.step-info p {
+    font-size: 0.78rem;
+    color: #6b6b6b;
+    line-height: 1.45;
+    margin: 0;
+}
+
+/* 노트 섹션 */
+.youth-note,
+.reborn-note {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    background: #fdf6ef;
+    border-left: 3px solid #C9A57B;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.8rem;
+    color: #7a6050;
+}
+
+.youth-note p,
+.reborn-note p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* 가격순 비교 summary 표 */
+.headspa-price-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .service-tabs {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .service-tab {
+        padding: 0.85rem 1rem;
+        font-size: 0.92rem;
+    }
+
+    .leekaja-only-box {
+        min-width: 0;
+        padding: 1.1rem 1.2rem;
+        max-width: 100%;
+        display: block;
+    }
+
+    .leekaja-benefits {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .headspa-card-header {
+        padding: 1.2rem 1.2rem 1rem;
+    }
+
+    .headspa-card-body {
+        padding: 1rem 1rem;
+    }
+
+    .spa-name {
+        font-size: 1.2rem;
+    }
+
+    .step-info strong {
+        font-size: 0.83rem;
+    }
+
+    .step-info p {
+        font-size: 0.75rem;
+    }
+}
+
+/* ============================================================
+   리본/유스 스파 공유 단계 섹션
+   ============================================================ */
+.reborn-shared-steps {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e8edf8 100%);
+    border: 1px solid #c8d4f0;
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.reborn-shared-steps.youth-shared {
+    background: linear-gradient(135deg, #fdf6ef 0%, #f5ead8 100%);
+    border-color: #e8c99e;
+}
+
+.reborn-shared-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #4a5a9a;
+    margin: 0 0 0.7rem;
+}
+
+.reborn-shared-steps.youth-shared .reborn-shared-label {
+    color: #9a6a2a;
+}
+
+.reborn-shared-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.4rem;
+}
+
+.reborn-shared-grid span {
+    background: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.75rem;
+    color: #4a4a4a;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.07);
+}
+
+.reborn-additional-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #7020a0;
+    margin-bottom: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    background: #f5eeff;
+    border-left: 3px solid #8a30c0;
+    border-radius: 0 6px 6px 0;
+}
+
+/* spa-steps-grid (Youth 상세 단계) */
+.spa-steps-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .reborn-shared-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================================
+   가격 비교 요약 바
+   ============================================================ */
+.spa-price-compare {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+}
+
+.spa-compare-item {
+    flex: 1;
+    min-width: 120px;
+    max-width: 180px;
+    border-radius: 16px;
+    padding: 1rem 0.8rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transition: transform 0.25s, box-shadow 0.25s;
+    cursor: default;
+}
+
+.spa-compare-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+.spa-compare-item.relaxing { background: linear-gradient(160deg, #e8f4f0, #c8e6df); }
+.spa-compare-item.power    { background: linear-gradient(160deg, #e8edf8, #c8d6f0); }
+.spa-compare-item.energy   { background: linear-gradient(160deg, #f0eaf8, #d8c8f0); }
+.spa-compare-item.youth    { background: linear-gradient(160deg, #fdf0e8, #f5d8b8); }
+.spa-compare-item.reborn   { background: linear-gradient(160deg, #2d2d3e, #1a1a2e); }
+
+.compare-price {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #2a2a2a;
+    margin-bottom: 0.2rem;
+}
+
+.spa-compare-item.reborn .compare-price {
+    color: #C9A57B;
+}
+
+.compare-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #3a3a3a;
+    margin-bottom: 0.2rem;
+}
+
+.spa-compare-item.reborn .compare-name {
+    color: #fff;
+}
+
+.compare-time {
+    font-size: 0.75rem;
+    color: #6b6b6b;
+    margin-bottom: 0.5rem;
+}
+
+.spa-compare-item.reborn .compare-time {
+    color: rgba(255,255,255,0.65);
+}
+
+.compare-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.compare-features span {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #5a5a5a;
+    background: rgba(255,255,255,0.65);
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
+}
+
+.spa-compare-item.reborn .compare-features span {
+    background: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.85);
+}
+
+.feat-badge {
+    font-size: 0.68rem !important;
+}
+
+.feat-badge.diag  { background: rgba(100,150,255,0.2) !important; color: #3050b0 !important; }
+.feat-badge.water { background: rgba(50,180,150,0.2) !important; color: #1a7060 !important; }
+.feat-badge.special { background: rgba(180,80,200,0.2) !important; color: #7020a0 !important; }
+
+.spa-compare-item.reborn .feat-badge.diag,
+.spa-compare-item.reborn .feat-badge.special {
+    background: rgba(255,255,255,0.15) !important;
+    color: rgba(255,255,255,0.9) !important;
+}
+
+@media (max-width: 640px) {
+    .spa-price-compare {
+        gap: 0.5rem;
+    }
+    .spa-compare-item {
+        min-width: 90px;
+        padding: 0.7rem 0.5rem;
+    }
+    .compare-price {
+        font-size: 0.85rem;
+    }
+    .compare-name {
+        font-size: 0.9rem;
+    }
+}
