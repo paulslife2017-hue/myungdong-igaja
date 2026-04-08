@@ -839,6 +839,21 @@ section {
     font-weight: 400;
 }
 
+/* SEO Intro Text */
+.seo-intro-text {
+    max-width: 800px;
+    margin: 1.2rem auto 0;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #5a5a5a;
+    text-align: center;
+}
+
+.seo-intro-text strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 /* Services Section */
 .services {
     background-color: var(--bg-light);
