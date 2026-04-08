@@ -1318,6 +1318,13 @@ section {
     color: var(--text-light);
 }
 
+/* Google Reviews Widget */
+.google-reviews-widget {
+    margin: 2.5rem auto 2rem;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
 .reviews-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
