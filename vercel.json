@@ -36,6 +36,14 @@
       "dest": "/headspa.html"
     },
     {
+      "src": "/headspa-ko",
+      "dest": "/headspa-ko.html"
+    },
+    {
+      "src": "/headspa-ja",
+      "dest": "/headspa-ja.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
