@@ -32,6 +32,10 @@
       "dest": "/index.html"
     },
     {
+      "src": "/headspa",
+      "dest": "/headspa.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
